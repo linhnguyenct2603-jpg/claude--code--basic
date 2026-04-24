@@ -1,0 +1,1159 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: http://127.0.0.1:5500/chart.html
+Subject: E-Commerce Dashboard
+Date: Fri, 24 Apr 2026 08:12:27 +0700
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--jmKnjgJdZ3XMUVfB5mYD16xDmlhTolvbzERx7RA0Je----"
+
+
+------MultipartBoundary--jmKnjgJdZ3XMUVfB5mYD16xDmlhTolvbzERx7RA0Je----
+Content-Type: text/html
+Content-ID: <frame-5A1D16B67E90FF10540929579337C35D@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: http://127.0.0.1:5500/chart.html
+
+<!DOCTYPE html><html lang=3D"en"><head><meta http-equiv=3D"Content-Type" co=
+ntent=3D"text/html; charset=3DUTF-8"><link rel=3D"stylesheet" type=3D"text/=
+css" href=3D"cid:css-a4fd26b7-74b6-4c56-8953-dbed62b6a10f@mhtml.blink" />
+ =20
+  <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=3D=
+1.0">
+  <title>E-Commerce Dashboard</title>
+  <link rel=3D"preconnect" href=3D"https://fonts.googleapis.com/">
+  <link rel=3D"preconnect" href=3D"https://fonts.gstatic.com/" crossorigin=
+=3D"">
+  <link href=3D"https://fonts.googleapis.com/css2?family=3DInter:wght@400;5=
+00;600&amp;family=3DPoppins:wght@600;700&amp;display=3Dswap" rel=3D"stylesh=
+eet">
+ =20
+ =20
+ =20
+ =20
+ =20
+</head>
+<body>
+  <div id=3D"root"><div class=3D"dashboard"><div class=3D"dash-header"><div=
+><h1>E-Commerce Dashboard</h1><p>Sales, Business &amp; Marketing Report =E2=
+=80=94 2025</p></div><div class=3D"header-actions"><select class=3D"period-=
+select"><option value=3D"2024">2024</option><option value=3D"2025">2025</op=
+tion></select><button class=3D"refresh-btn"><svg viewBox=3D"0 0 24 24" fill=
+=3D"none" stroke=3D"currentColor" stroke-width=3D"2" stroke-linecap=3D"roun=
+d" stroke-linejoin=3D"round" width=3D"14" height=3D"14"><polyline points=3D=
+"23 4 23 10 17 10"></polyline><path d=3D"M20.49 15a9 9 0 1 1-2.12-9.36L23 1=
+0"></path></svg>Refresh</button></div></div><div class=3D"kpi-grid"><div cl=
+ass=3D"kpi-card"><div class=3D"kpi-header"><span class=3D"kpi-label">Total =
+Revenue</span><div class=3D"kpi-icon" style=3D"background: rgba(34, 197, 94=
+, 0.12);"><svg viewBox=3D"0 0 24 24" fill=3D"none" stroke=3D"#22c55e" strok=
+e-width=3D"2" stroke-linecap=3D"round" stroke-linejoin=3D"round" width=3D"1=
+8" height=3D"18"><line x1=3D"12" y1=3D"1" x2=3D"12" y2=3D"23"></line><path =
+d=3D"M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"></path></svg></div>=
+</div><div class=3D"kpi-value">$618.2K</div><div class=3D"kpi-change up"><s=
+vg viewBox=3D"0 0 16 16" fill=3D"none" stroke=3D"currentColor" stroke-width=
+=3D"2" stroke-linecap=3D"round" width=3D"12" height=3D"12"><polyline points=
+=3D"8 12 8 4"></polyline><polyline points=3D"4 8 8 4 12 8"></polyline></svg=
+> 18.4% vs last year</div></div><div class=3D"kpi-card"><div class=3D"kpi-h=
+eader"><span class=3D"kpi-label">Total Orders</span><div class=3D"kpi-icon"=
+ style=3D"background: rgba(88, 166, 255, 0.12);"><svg viewBox=3D"0 0 24 24"=
+ fill=3D"none" stroke=3D"#58a6ff" stroke-width=3D"2" stroke-linecap=3D"roun=
+d" stroke-linejoin=3D"round" width=3D"18" height=3D"18"><path d=3D"M6 2L3 6=
+v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z"></path><line x1=3D"3" y1=3D"6" =
+x2=3D"21" y2=3D"6"></line><path d=3D"M16 10a4 4 0 0 1-8 0"></path></svg></d=
+iv></div><div class=3D"kpi-value">6,405</div><div class=3D"kpi-change up"><=
+svg viewBox=3D"0 0 16 16" fill=3D"none" stroke=3D"currentColor" stroke-widt=
+h=3D"2" stroke-linecap=3D"round" width=3D"12" height=3D"12"><polyline point=
+s=3D"8 12 8 4"></polyline><polyline points=3D"4 8 8 4 12 8"></polyline></sv=
+g> 12.7% vs last year</div></div><div class=3D"kpi-card"><div class=3D"kpi-=
+header"><span class=3D"kpi-label">New Customers</span><div class=3D"kpi-ico=
+n" style=3D"background: rgba(163, 113, 247, 0.12);"><svg viewBox=3D"0 0 24 =
+24" fill=3D"none" stroke=3D"#a371f7" stroke-width=3D"2" stroke-linecap=3D"r=
+ound" stroke-linejoin=3D"round" width=3D"18" height=3D"18"><path d=3D"M20 2=
+1v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx=3D"12" cy=3D"7" r=
+=3D"4"></circle></svg></div></div><div class=3D"kpi-value">4,109</div><div =
+class=3D"kpi-change up"><svg viewBox=3D"0 0 16 16" fill=3D"none" stroke=3D"=
+currentColor" stroke-width=3D"2" stroke-linecap=3D"round" width=3D"12" heig=
+ht=3D"12"><polyline points=3D"8 12 8 4"></polyline><polyline points=3D"4 8 =
+8 4 12 8"></polyline></svg> 15.3% vs last year</div></div><div class=3D"kpi=
+-card"><div class=3D"kpi-header"><span class=3D"kpi-label">Conversion Rate<=
+/span><div class=3D"kpi-icon" style=3D"background: rgba(240, 136, 62, 0.12)=
+;"><svg viewBox=3D"0 0 24 24" fill=3D"none" stroke=3D"#f0883e" stroke-width=
+=3D"2" stroke-linecap=3D"round" stroke-linejoin=3D"round" width=3D"18" heig=
+ht=3D"18"><polyline points=3D"23 6 13.5 15.5 8.5 10.5 1 18"></polyline><pol=
+yline points=3D"17 6 23 6 23 12"></polyline></svg></div></div><div class=3D=
+"kpi-value">4.8%</div><div class=3D"kpi-change down"><svg viewBox=3D"0 0 16=
+ 16" fill=3D"none" stroke=3D"currentColor" stroke-width=3D"2" stroke-lineca=
+p=3D"round" width=3D"12" height=3D"12"><polyline points=3D"8 4 8 12"></poly=
+line><polyline points=3D"4 8 8 12 12 8"></polyline></svg> 2.1% vs last year=
+</div></div></div><div class=3D"charts-row"><div class=3D"chart-card"><h3>R=
+evenue Overview</h3><p class=3D"chart-sub">Monthly revenue trend in USD</p>=
+<div class=3D"recharts-responsive-container" style=3D"width: 100%; height: =
+280px; min-width: 0px;"><div class=3D"recharts-wrapper" style=3D"position: =
+relative; cursor: default; width: 100%; height: 100%; max-height: 280px; ma=
+x-width: 809px;"><svg class=3D"recharts-surface" width=3D"809" height=3D"28=
+0" viewBox=3D"0 0 809 280" style=3D"width: 100%; height: 100%;"><title></ti=
+tle><desc></desc><defs><clipPath id=3D"recharts1-clip"><rect x=3D"45" y=3D"=
+5" height=3D"245" width=3D"759"></rect></clipPath></defs><g class=3D"rechar=
+ts-layer recharts-cartesian-axis recharts-xAxis xAxis"><line orientation=3D=
+"bottom" width=3D"759" height=3D"30" x=3D"45" y=3D"250" class=3D"recharts-c=
+artesian-axis-line" stroke=3D"#30363d" fill=3D"none" x1=3D"45" y1=3D"250" x=
+2=3D"804" y2=3D"250"></line><g class=3D"recharts-cartesian-axis-ticks"><g c=
+lass=3D"recharts-layer recharts-cartesian-axis-tick"><text orientation=3D"b=
+ottom" width=3D"759" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"45=
+" y=3D"258" class=3D"recharts-text recharts-cartesian-axis-tick-value" text=
+-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"45" dy=3D"0.71em">Jan</tspa=
+n></text></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><text=
+ orientation=3D"bottom" width=3D"759" height=3D"30" stroke=3D"none" font-si=
+ze=3D"12" x=3D"114" y=3D"258" class=3D"recharts-text recharts-cartesian-axi=
+s-tick-value" text-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"114" dy=
+=3D"0.71em">Feb</tspan></text></g><g class=3D"recharts-layer recharts-carte=
+sian-axis-tick"><text orientation=3D"bottom" width=3D"759" height=3D"30" st=
+roke=3D"none" font-size=3D"12" x=3D"183" y=3D"258" class=3D"recharts-text r=
+echarts-cartesian-axis-tick-value" text-anchor=3D"middle" fill=3D"#8b949e">=
+<tspan x=3D"183" dy=3D"0.71em">Mar</tspan></text></g><g class=3D"recharts-l=
+ayer recharts-cartesian-axis-tick"><text orientation=3D"bottom" width=3D"75=
+9" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"252" y=3D"258" class=
+=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D"middle=
+" fill=3D"#8b949e"><tspan x=3D"252" dy=3D"0.71em">Apr</tspan></text></g><g =
+class=3D"recharts-layer recharts-cartesian-axis-tick"><text orientation=3D"=
+bottom" width=3D"759" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"3=
+21" y=3D"258" class=3D"recharts-text recharts-cartesian-axis-tick-value" te=
+xt-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"321" dy=3D"0.71em">May</t=
+span></text></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><t=
+ext orientation=3D"bottom" width=3D"759" height=3D"30" stroke=3D"none" font=
+-size=3D"12" x=3D"390" y=3D"258" class=3D"recharts-text recharts-cartesian-=
+axis-tick-value" text-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"390" d=
+y=3D"0.71em">Jun</tspan></text></g><g class=3D"recharts-layer recharts-cart=
+esian-axis-tick"><text orientation=3D"bottom" width=3D"759" height=3D"30" s=
+troke=3D"none" font-size=3D"12" x=3D"459" y=3D"258" class=3D"recharts-text =
+recharts-cartesian-axis-tick-value" text-anchor=3D"middle" fill=3D"#8b949e"=
+><tspan x=3D"459" dy=3D"0.71em">Jul</tspan></text></g><g class=3D"recharts-=
+layer recharts-cartesian-axis-tick"><text orientation=3D"bottom" width=3D"7=
+59" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"528" y=3D"258" clas=
+s=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D"middl=
+e" fill=3D"#8b949e"><tspan x=3D"528" dy=3D"0.71em">Aug</tspan></text></g><g=
+ class=3D"recharts-layer recharts-cartesian-axis-tick"><text orientation=3D=
+"bottom" width=3D"759" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"=
+597" y=3D"258" class=3D"recharts-text recharts-cartesian-axis-tick-value" t=
+ext-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"597" dy=3D"0.71em">Sep</=
+tspan></text></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><=
+text orientation=3D"bottom" width=3D"759" height=3D"30" stroke=3D"none" fon=
+t-size=3D"12" x=3D"666" y=3D"258" class=3D"recharts-text recharts-cartesian=
+-axis-tick-value" text-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"666" =
+dy=3D"0.71em">Oct</tspan></text></g><g class=3D"recharts-layer recharts-car=
+tesian-axis-tick"><text orientation=3D"bottom" width=3D"759" height=3D"30" =
+stroke=3D"none" font-size=3D"12" x=3D"735" y=3D"258" class=3D"recharts-text=
+ recharts-cartesian-axis-tick-value" text-anchor=3D"middle" fill=3D"#8b949e=
+"><tspan x=3D"735" dy=3D"0.71em">Nov</tspan></text></g><g class=3D"recharts=
+-layer recharts-cartesian-axis-tick"><text orientation=3D"bottom" width=3D"=
+759" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"798.328125" y=3D"2=
+58" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=
+=3D"middle" fill=3D"#8b949e"><tspan x=3D"798.328125" dy=3D"0.71em">Dec</tsp=
+an></text></g></g></g><g class=3D"recharts-layer recharts-cartesian-axis re=
+charts-yAxis yAxis"><g class=3D"recharts-cartesian-axis-ticks"><g class=3D"=
+recharts-layer recharts-cartesian-axis-tick"><text orientation=3D"left" wid=
+th=3D"60" height=3D"245" stroke=3D"none" font-size=3D"12" x=3D"37" y=3D"250=
+" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D=
+"end" fill=3D"#8b949e"><tspan x=3D"37" dy=3D"0.355em">$0k</tspan></text></g=
+><g class=3D"recharts-layer recharts-cartesian-axis-tick"><text orientation=
+=3D"left" width=3D"60" height=3D"245" stroke=3D"none" font-size=3D"12" x=3D=
+"37" y=3D"188.75" class=3D"recharts-text recharts-cartesian-axis-tick-value=
+" text-anchor=3D"end" fill=3D"#8b949e"><tspan x=3D"37" dy=3D"0.355em">$25k<=
+/tspan></text></g><g class=3D"recharts-layer recharts-cartesian-axis-tick">=
+<text orientation=3D"left" width=3D"60" height=3D"245" stroke=3D"none" font=
+-size=3D"12" x=3D"37" y=3D"127.5" class=3D"recharts-text recharts-cartesian=
+-axis-tick-value" text-anchor=3D"end" fill=3D"#8b949e"><tspan x=3D"37" dy=
+=3D"0.355em">$50k</tspan></text></g><g class=3D"recharts-layer recharts-car=
+tesian-axis-tick"><text orientation=3D"left" width=3D"60" height=3D"245" st=
+roke=3D"none" font-size=3D"12" x=3D"37" y=3D"66.25" class=3D"recharts-text =
+recharts-cartesian-axis-tick-value" text-anchor=3D"end" fill=3D"#8b949e"><t=
+span x=3D"37" dy=3D"0.355em">$75k</tspan></text></g><g class=3D"recharts-la=
+yer recharts-cartesian-axis-tick"><text orientation=3D"left" width=3D"60" h=
+eight=3D"245" stroke=3D"none" font-size=3D"12" x=3D"37" y=3D"7" class=3D"re=
+charts-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" fill=3D=
+"#8b949e"><tspan x=3D"37" dy=3D"0.355em">$100k</tspan></text></g></g></g><g=
+ class=3D"recharts-cartesian-grid"><g class=3D"recharts-cartesian-grid-hori=
+zontal"><line stroke=3D"#30363d" stroke-dasharray=3D"3 3" fill=3D"none" x=
+=3D"45" y=3D"5" width=3D"759" height=3D"245" x1=3D"45" y1=3D"250" x2=3D"804=
+" y2=3D"250"></line><line stroke=3D"#30363d" stroke-dasharray=3D"3 3" fill=
+=3D"none" x=3D"45" y=3D"5" width=3D"759" height=3D"245" x1=3D"45" y1=3D"188=
+.75" x2=3D"804" y2=3D"188.75"></line><line stroke=3D"#30363d" stroke-dashar=
+ray=3D"3 3" fill=3D"none" x=3D"45" y=3D"5" width=3D"759" height=3D"245" x1=
+=3D"45" y1=3D"127.5" x2=3D"804" y2=3D"127.5"></line><line stroke=3D"#30363d=
+" stroke-dasharray=3D"3 3" fill=3D"none" x=3D"45" y=3D"5" width=3D"759" hei=
+ght=3D"245" x1=3D"45" y1=3D"66.25" x2=3D"804" y2=3D"66.25"></line><line str=
+oke=3D"#30363d" stroke-dasharray=3D"3 3" fill=3D"none" x=3D"45" y=3D"5" wid=
+th=3D"759" height=3D"245" x1=3D"45" y1=3D"5" x2=3D"804" y2=3D"5"></line></g=
+></g><g class=3D"recharts-layer recharts-area"><g class=3D"recharts-layer">=
+<defs><clipPath id=3D"animationClipPath-recharts-area-3"><rect x=3D"45" y=
+=3D"0" width=3D"759" height=3D"252"></rect></clipPath></defs><g class=3D"re=
+charts-layer" clip-path=3D"url(#animationClipPath-recharts-area-3)"><g clas=
+s=3D"recharts-layer"><path stroke-width=3D"2" fill=3D"url(#colorRevenue)" f=
+ill-opacity=3D"0.6" width=3D"759" height=3D"245" stroke=3D"none" class=3D"r=
+echarts-curve recharts-area-area" d=3D"M45,180.42C68,175.888,91,171.355,114=
+,171.355C137,171.355,160,176.99,183,176.99C206,176.99,229,149.06,252,149.06=
+C275,149.06,298,154.695,321,154.695C344,154.695,367,143.67,390,138.28C413,1=
+32.89,436,122.355,459,122.355C482,122.355,505,130.685,528,130.685C551,130.6=
+85,574,119.619,597,114.515C620,109.411,643,107.451,666,100.06C689,92.669,71=
+2,78.704,735,70.17C758,61.636,781,55.245,804,48.855L804,250C781,250,758,250=
+,735,250C712,250,689,250,666,250C643,250,620,250,597,250C574,250,551,250,52=
+8,250C505,250,482,250,459,250C436,250,413,250,390,250C367,250,344,250,321,2=
+50C298,250,275,250,252,250C229,250,206,250,183,250C160,250,137,250,114,250C=
+91,250,68,250,45,250Z"></path><path stroke=3D"#22c55e" stroke-width=3D"2" f=
+ill=3D"none" fill-opacity=3D"0.6" width=3D"759" height=3D"245" class=3D"rec=
+harts-curve recharts-area-curve" d=3D"M45,180.42C68,175.888,91,171.355,114,=
+171.355C137,171.355,160,176.99,183,176.99C206,176.99,229,149.06,252,149.06C=
+275,149.06,298,154.695,321,154.695C344,154.695,367,143.67,390,138.28C413,13=
+2.89,436,122.355,459,122.355C482,122.355,505,130.685,528,130.685C551,130.68=
+5,574,119.619,597,114.515C620,109.411,643,107.451,666,100.06C689,92.669,712=
+,78.704,735,70.17C758,61.636,781,55.245,804,48.855"></path></g></g></g></g>=
+</svg><div tabindex=3D"-1" class=3D"recharts-tooltip-wrapper recharts-toolt=
+ip-wrapper-right recharts-tooltip-wrapper-bottom" style=3D"visibility: hidd=
+en; pointer-events: none; position: absolute; top: 0px; left: 0px; transfor=
+m: translate(45px, 10px);"><div class=3D"recharts-default-tooltip" style=3D=
+"margin: 0px; padding: 8px 12px; background: rgb(22, 27, 34); border: 1px s=
+olid rgb(48, 54, 61); white-space: nowrap; border-radius: 8px; font-size: 1=
+2px; color: rgb(230, 237, 243); font-family: Inter, sans-serif;"><p class=
+=3D"recharts-tooltip-label" style=3D"margin: 0px 0px 4px; color: rgb(139, 1=
+48, 158);"></p></div></div></div></div></div><div class=3D"chart-card"><h3>=
+Traffic Sources</h3><p class=3D"chart-sub">User acquisition by channel</p><=
+div class=3D"recharts-responsive-container" style=3D"width: 100%; height: 2=
+20px; min-width: 0px;"><div class=3D"recharts-wrapper" style=3D"position: r=
+elative; cursor: default; width: 100%; height: 100%; max-height: 220px; max=
+-width: 379px;"><svg cx=3D"50%" cy=3D"50%" class=3D"recharts-surface" width=
+=3D"379" height=3D"220" viewBox=3D"0 0 379 220" style=3D"width: 100%; heigh=
+t: 100%;"><title></title><desc></desc><defs><clipPath id=3D"recharts4-clip"=
+><rect x=3D"5" y=3D"5" height=3D"174" width=3D"369"></rect></clipPath></def=
+s><g class=3D"recharts-layer recharts-pie" tabindex=3D"0"><g class=3D"recha=
+rts-layer"><g class=3D"recharts-layer recharts-pie-sector" tabindex=3D"-1">=
+<path cx=3D"189.5" cy=3D"92" name=3D"Organic Search" stroke=3D"#fff" fill=
+=3D"#22c55e" color=3D"#22c55e" tabindex=3D"-1" class=3D"recharts-sector" d=
+=3D"M 279.5,92
+    A 90,90,0,
+    0,0,
+    123.89282353207295,30.390760466418037
+  L 145.76188235471528,50.92717364427869
+            A 60,60,0,
+            0,1,
+            249.5,92 Z" role=3D"img"></path></g><g class=3D"recharts-layer =
+recharts-pie-sector" tabindex=3D"-1"><path cx=3D"189.5" cy=3D"92" name=3D"P=
+aid Ads" stroke=3D"#fff" fill=3D"#58a6ff" color=3D"#58a6ff" tabindex=3D"-1"=
+ class=3D"recharts-sector" d=3D"M 123.89282353207295,30.390760466418037
+    A 90,90,0,
+    0,0,
+    136.5993272936774,164.81152949374524
+  L 154.2328848624516,140.54101966249684
+            A 60,60,0,
+            0,1,
+            145.76188235471528,50.92717364427869 Z" role=3D"img"></path></g=
+><g class=3D"recharts-layer recharts-pie-sector" tabindex=3D"-1"><path cx=
+=3D"189.5" cy=3D"92" name=3D"Social Media" stroke=3D"#fff" fill=3D"#a371f7"=
+ color=3D"#a371f7" tabindex=3D"-1" class=3D"recharts-sector" d=3D"M 136.599=
+3272936774,164.81152949374524
+    A 90,90,0,
+    0,0,
+    237.72441154810963,167.98951329518138
+  L 221.64960769873977,142.65967553012092
+            A 60,60,0,
+            0,1,
+            154.2328848624516,140.54101966249684 Z" role=3D"img"></path></g=
+><g class=3D"recharts-layer recharts-pie-sector" tabindex=3D"-1"><path cx=
+=3D"189.5" cy=3D"92" name=3D"Direct" stroke=3D"#fff" fill=3D"#f0883e" color=
+=3D"#f0883e" tabindex=3D"-1" class=3D"recharts-sector" d=3D"M 237.724411548=
+10963,167.98951329518138
+    A 90,90,0,
+    0,0,
+    273.1798837299426,125.13120974162109
+  L 245.28658915329507,114.08747316108072
+            A 60,60,0,
+            0,1,
+            221.64960769873977,142.65967553012092 Z" role=3D"img"></path></=
+g><g class=3D"recharts-layer recharts-pie-sector" tabindex=3D"-1"><path cx=
+=3D"189.5" cy=3D"92" name=3D"Email" stroke=3D"#fff" fill=3D"#f778ba" color=
+=3D"#f778ba" tabindex=3D"-1" class=3D"recharts-sector" d=3D"M 273.179883729=
+9426,125.13120974162109
+    A 90,90,0,
+    0,0,
+    279.5,92.00000000000003
+  L 249.5,92.00000000000001
+            A 60,60,0,
+            0,1,
+            245.28658915329507,114.08747316108072 Z" role=3D"img"></path></=
+g></g></g></svg><div class=3D"recharts-legend-wrapper" style=3D"position: a=
+bsolute; width: 369px; height: auto; left: 5px; bottom: 5px;"><ul class=3D"=
+recharts-default-legend" style=3D"padding: 0px; margin: 0px; text-align: ce=
+nter;"><li class=3D"recharts-legend-item legend-item-0" style=3D"display: i=
+nline-block; margin-right: 10px;"><svg class=3D"recharts-surface" width=3D"=
+8" height=3D"8" viewBox=3D"0 0 32 32" style=3D"display: inline-block; verti=
+cal-align: middle; margin-right: 4px;"><title></title><desc></desc><path fi=
+ll=3D"#22c55e" cx=3D"16" cy=3D"16" class=3D"recharts-symbols" transform=3D"=
+translate(16, 16)" d=3D"M16,0A16,16,0,1,1,-16,0A16,16,0,1,1,16,0"></path></=
+svg><span class=3D"recharts-legend-item-text" style=3D"color: rgb(34, 197, =
+94);"><span style=3D"color: rgb(139, 148, 158); font-size: 12px;">Organic S=
+earch</span></span></li><li class=3D"recharts-legend-item legend-item-1" st=
+yle=3D"display: inline-block; margin-right: 10px;"><svg class=3D"recharts-s=
+urface" width=3D"8" height=3D"8" viewBox=3D"0 0 32 32" style=3D"display: in=
+line-block; vertical-align: middle; margin-right: 4px;"><title></title><des=
+c></desc><path fill=3D"#58a6ff" cx=3D"16" cy=3D"16" class=3D"recharts-symbo=
+ls" transform=3D"translate(16, 16)" d=3D"M16,0A16,16,0,1,1,-16,0A16,16,0,1,=
+1,16,0"></path></svg><span class=3D"recharts-legend-item-text" style=3D"col=
+or: rgb(88, 166, 255);"><span style=3D"color: rgb(139, 148, 158); font-size=
+: 12px;">Paid Ads</span></span></li><li class=3D"recharts-legend-item legen=
+d-item-2" style=3D"display: inline-block; margin-right: 10px;"><svg class=
+=3D"recharts-surface" width=3D"8" height=3D"8" viewBox=3D"0 0 32 32" style=
+=3D"display: inline-block; vertical-align: middle; margin-right: 4px;"><tit=
+le></title><desc></desc><path fill=3D"#a371f7" cx=3D"16" cy=3D"16" class=3D=
+"recharts-symbols" transform=3D"translate(16, 16)" d=3D"M16,0A16,16,0,1,1,-=
+16,0A16,16,0,1,1,16,0"></path></svg><span class=3D"recharts-legend-item-tex=
+t" style=3D"color: rgb(163, 113, 247);"><span style=3D"color: rgb(139, 148,=
+ 158); font-size: 12px;">Social Media</span></span></li><li class=3D"rechar=
+ts-legend-item legend-item-3" style=3D"display: inline-block; margin-right:=
+ 10px;"><svg class=3D"recharts-surface" width=3D"8" height=3D"8" viewBox=3D=
+"0 0 32 32" style=3D"display: inline-block; vertical-align: middle; margin-=
+right: 4px;"><title></title><desc></desc><path fill=3D"#f0883e" cx=3D"16" c=
+y=3D"16" class=3D"recharts-symbols" transform=3D"translate(16, 16)" d=3D"M1=
+6,0A16,16,0,1,1,-16,0A16,16,0,1,1,16,0"></path></svg><span class=3D"rechart=
+s-legend-item-text" style=3D"color: rgb(240, 136, 62);"><span style=3D"colo=
+r: rgb(139, 148, 158); font-size: 12px;">Direct</span></span></li><li class=
+=3D"recharts-legend-item legend-item-4" style=3D"display: inline-block; mar=
+gin-right: 10px;"><svg class=3D"recharts-surface" width=3D"8" height=3D"8" =
+viewBox=3D"0 0 32 32" style=3D"display: inline-block; vertical-align: middl=
+e; margin-right: 4px;"><title></title><desc></desc><path fill=3D"#f778ba" c=
+x=3D"16" cy=3D"16" class=3D"recharts-symbols" transform=3D"translate(16, 16=
+)" d=3D"M16,0A16,16,0,1,1,-16,0A16,16,0,1,1,16,0"></path></svg><span class=
+=3D"recharts-legend-item-text" style=3D"color: rgb(247, 120, 186);"><span s=
+tyle=3D"color: rgb(139, 148, 158); font-size: 12px;">Email</span></span></l=
+i></ul></div><div tabindex=3D"-1" class=3D"recharts-tooltip-wrapper rechart=
+s-tooltip-wrapper-right recharts-tooltip-wrapper-bottom" style=3D"visibilit=
+y: hidden; pointer-events: none; position: absolute; top: 0px; left: 0px; t=
+ransform: translate(10px, 10px);"><div class=3D"recharts-default-tooltip" s=
+tyle=3D"margin: 0px; padding: 8px 12px; background: rgb(22, 27, 34); border=
+: 1px solid rgb(48, 54, 61); white-space: nowrap; border-radius: 8px; font-=
+size: 12px; color: rgb(230, 237, 243); font-family: Inter, sans-serif;"><p =
+class=3D"recharts-tooltip-label" style=3D"margin: 0px;"></p></div></div></d=
+iv></div></div></div><div class=3D"charts-row-2"><div class=3D"chart-card">=
+<h3>Orders &amp; Customers</h3><p class=3D"chart-sub">Monthly order volume =
+and new customers</p><div class=3D"recharts-responsive-container" style=3D"=
+width: 100%; height: 220px; min-width: 0px;"><div class=3D"recharts-wrapper=
+" style=3D"position: relative; cursor: default; width: 100%; height: 100%; =
+max-height: 220px; max-width: 594px;"><svg class=3D"recharts-surface" width=
+=3D"594" height=3D"220" viewBox=3D"0 0 594 220" style=3D"width: 100%; heigh=
+t: 100%;"><title></title><desc></desc><defs><clipPath id=3D"recharts6-clip"=
+><rect x=3D"45" y=3D"5" height=3D"167" width=3D"544"></rect></clipPath></de=
+fs><g class=3D"recharts-layer recharts-cartesian-axis recharts-xAxis xAxis"=
+><line orientation=3D"bottom" width=3D"544" height=3D"30" x=3D"45" y=3D"172=
+" class=3D"recharts-cartesian-axis-line" stroke=3D"#30363d" fill=3D"none" x=
+1=3D"45" y1=3D"172" x2=3D"589" y2=3D"172"></line><g class=3D"recharts-carte=
+sian-axis-ticks"><g class=3D"recharts-layer recharts-cartesian-axis-tick"><=
+text orientation=3D"bottom" width=3D"544" height=3D"30" stroke=3D"none" fon=
+t-size=3D"12" x=3D"45" y=3D"180" class=3D"recharts-text recharts-cartesian-=
+axis-tick-value" text-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"45" dy=
+=3D"0.71em">Jan</tspan></text></g><g class=3D"recharts-layer recharts-carte=
+sian-axis-tick"><text orientation=3D"bottom" width=3D"544" height=3D"30" st=
+roke=3D"none" font-size=3D"12" x=3D"94.45454545454545" y=3D"180" class=3D"r=
+echarts-text recharts-cartesian-axis-tick-value" text-anchor=3D"middle" fil=
+l=3D"#8b949e"><tspan x=3D"94.45454545454545" dy=3D"0.71em">Feb</tspan></tex=
+t></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><text orient=
+ation=3D"bottom" width=3D"544" height=3D"30" stroke=3D"none" font-size=3D"1=
+2" x=3D"143.9090909090909" y=3D"180" class=3D"recharts-text recharts-cartes=
+ian-axis-tick-value" text-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"14=
+3.9090909090909" dy=3D"0.71em">Mar</tspan></text></g><g class=3D"recharts-l=
+ayer recharts-cartesian-axis-tick"><text orientation=3D"bottom" width=3D"54=
+4" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"193.36363636363637" =
+y=3D"180" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-a=
+nchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"193.36363636363637" dy=3D"0.7=
+1em">Apr</tspan></text></g><g class=3D"recharts-layer recharts-cartesian-ax=
+is-tick"><text orientation=3D"bottom" width=3D"544" height=3D"30" stroke=3D=
+"none" font-size=3D"12" x=3D"242.8181818181818" y=3D"180" class=3D"recharts=
+-text recharts-cartesian-axis-tick-value" text-anchor=3D"middle" fill=3D"#8=
+b949e"><tspan x=3D"242.8181818181818" dy=3D"0.71em">May</tspan></text></g><=
+g class=3D"recharts-layer recharts-cartesian-axis-tick"><text orientation=
+=3D"bottom" width=3D"544" height=3D"30" stroke=3D"none" font-size=3D"12" x=
+=3D"292.27272727272725" y=3D"180" class=3D"recharts-text recharts-cartesian=
+-axis-tick-value" text-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"292.2=
+7272727272725" dy=3D"0.71em">Jun</tspan></text></g><g class=3D"recharts-lay=
+er recharts-cartesian-axis-tick"><text orientation=3D"bottom" width=3D"544"=
+ height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"341.72727272727275" y=
+=3D"180" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-an=
+chor=3D"middle" fill=3D"#8b949e"><tspan x=3D"341.72727272727275" dy=3D"0.71=
+em">Jul</tspan></text></g><g class=3D"recharts-layer recharts-cartesian-axi=
+s-tick"><text orientation=3D"bottom" width=3D"544" height=3D"30" stroke=3D"=
+none" font-size=3D"12" x=3D"391.1818181818182" y=3D"180" class=3D"recharts-=
+text recharts-cartesian-axis-tick-value" text-anchor=3D"middle" fill=3D"#8b=
+949e"><tspan x=3D"391.1818181818182" dy=3D"0.71em">Aug</tspan></text></g><g=
+ class=3D"recharts-layer recharts-cartesian-axis-tick"><text orientation=3D=
+"bottom" width=3D"544" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"=
+440.6363636363636" y=3D"180" class=3D"recharts-text recharts-cartesian-axis=
+-tick-value" text-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"440.636363=
+6363636" dy=3D"0.71em">Sep</tspan></text></g><g class=3D"recharts-layer rec=
+harts-cartesian-axis-tick"><text orientation=3D"bottom" width=3D"544" heigh=
+t=3D"30" stroke=3D"none" font-size=3D"12" x=3D"490.09090909090907" y=3D"180=
+" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D=
+"middle" fill=3D"#8b949e"><tspan x=3D"490.09090909090907" dy=3D"0.71em">Oct=
+</tspan></text></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"=
+><text orientation=3D"bottom" width=3D"544" height=3D"30" stroke=3D"none" f=
+ont-size=3D"12" x=3D"539.5454545454545" y=3D"180" class=3D"recharts-text re=
+charts-cartesian-axis-tick-value" text-anchor=3D"middle" fill=3D"#8b949e"><=
+tspan x=3D"539.5454545454545" dy=3D"0.71em">Nov</tspan></text></g><g class=
+=3D"recharts-layer recharts-cartesian-axis-tick"><text orientation=3D"botto=
+m" width=3D"544" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"583.32=
+8125" y=3D"180" class=3D"recharts-text recharts-cartesian-axis-tick-value" =
+text-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"583.328125" dy=3D"0.71e=
+m">Dec</tspan></text></g></g></g><g class=3D"recharts-layer recharts-cartes=
+ian-axis recharts-yAxis yAxis"><g class=3D"recharts-cartesian-axis-ticks"><=
+g class=3D"recharts-layer recharts-cartesian-axis-tick"><text orientation=
+=3D"left" width=3D"60" height=3D"167" stroke=3D"none" font-size=3D"12" x=3D=
+"37" y=3D"172" class=3D"recharts-text recharts-cartesian-axis-tick-value" t=
+ext-anchor=3D"end" fill=3D"#8b949e"><tspan x=3D"37" dy=3D"0.355em">0</tspan=
+></text></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><text =
+orientation=3D"left" width=3D"60" height=3D"167" stroke=3D"none" font-size=
+=3D"12" x=3D"37" y=3D"130.25" class=3D"recharts-text recharts-cartesian-axi=
+s-tick-value" text-anchor=3D"end" fill=3D"#8b949e"><tspan x=3D"37" dy=3D"0.=
+355em">250</tspan></text></g><g class=3D"recharts-layer recharts-cartesian-=
+axis-tick"><text orientation=3D"left" width=3D"60" height=3D"167" stroke=3D=
+"none" font-size=3D"12" x=3D"37" y=3D"88.5" class=3D"recharts-text recharts=
+-cartesian-axis-tick-value" text-anchor=3D"end" fill=3D"#8b949e"><tspan x=
+=3D"37" dy=3D"0.355em">500</tspan></text></g><g class=3D"recharts-layer rec=
+harts-cartesian-axis-tick"><text orientation=3D"left" width=3D"60" height=
+=3D"167" stroke=3D"none" font-size=3D"12" x=3D"37" y=3D"46.75" class=3D"rec=
+harts-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" fill=3D"=
+#8b949e"><tspan x=3D"37" dy=3D"0.355em">750</tspan></text></g><g class=3D"r=
+echarts-layer recharts-cartesian-axis-tick"><text orientation=3D"left" widt=
+h=3D"60" height=3D"167" stroke=3D"none" font-size=3D"12" x=3D"37" y=3D"7" c=
+lass=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D"en=
+d" fill=3D"#8b949e"><tspan x=3D"37" dy=3D"0.355em">1000</tspan></text></g><=
+/g></g><g class=3D"recharts-cartesian-grid"><g class=3D"recharts-cartesian-=
+grid-horizontal"><line stroke=3D"#30363d" stroke-dasharray=3D"3 3" fill=3D"=
+none" x=3D"45" y=3D"5" width=3D"544" height=3D"167" x1=3D"45" y1=3D"172" x2=
+=3D"589" y2=3D"172"></line><line stroke=3D"#30363d" stroke-dasharray=3D"3 3=
+" fill=3D"none" x=3D"45" y=3D"5" width=3D"544" height=3D"167" x1=3D"45" y1=
+=3D"130.25" x2=3D"589" y2=3D"130.25"></line><line stroke=3D"#30363d" stroke=
+-dasharray=3D"3 3" fill=3D"none" x=3D"45" y=3D"5" width=3D"544" height=3D"1=
+67" x1=3D"45" y1=3D"88.5" x2=3D"589" y2=3D"88.5"></line><line stroke=3D"#30=
+363d" stroke-dasharray=3D"3 3" fill=3D"none" x=3D"45" y=3D"5" width=3D"544"=
+ height=3D"167" x1=3D"45" y1=3D"46.75" x2=3D"589" y2=3D"46.75"></line><line=
+ stroke=3D"#30363d" stroke-dasharray=3D"3 3" fill=3D"none" x=3D"45" y=3D"5"=
+ width=3D"544" height=3D"167" x1=3D"45" y1=3D"5" x2=3D"589" y2=3D"5"></line=
+></g></g><g class=3D"recharts-layer recharts-line"><path stroke=3D"#58a6ff"=
+ stroke-width=3D"2" fill=3D"none" width=3D"544" height=3D"167" class=3D"rec=
+harts-curve recharts-line-curve" stroke-dasharray=3D"568.2993774414062px 0p=
+x" d=3D"M45,119.896C61.485,114.385,77.97,108.874,94.455,108.874C110.939,108=
+.874,127.424,114.385,143.909,114.385C160.394,114.385,176.879,90.337,193.364=
+,90.337C209.848,90.337,226.333,95.848,242.818,95.848C259.303,95.848,275.788=
+,87.164,292.273,82.822C308.758,78.48,325.242,69.796,341.727,69.796C358.212,=
+69.796,374.697,75.474,391.182,75.474C407.667,75.474,424.152,67.764,440.636,=
+63.784C457.121,59.804,473.606,57.633,490.091,51.593C506.576,45.553,523.061,=
+34.392,539.545,27.545C556.03,20.698,572.515,15.605,589,10.511"></path><g cl=
+ass=3D"recharts-layer"></g></g><g class=3D"recharts-layer recharts-line"><p=
+ath stroke=3D"#a371f7" stroke-width=3D"2" fill=3D"none" width=3D"544" heigh=
+t=3D"167" class=3D"recharts-curve recharts-line-curve" stroke-dasharray=3D"=
+554.3279418945312px 0px" d=3D"M45,138.934C61.485,135.344,77.97,131.753,94.4=
+55,131.753C110.939,131.753,127.424,135.427,143.909,135.427C160.394,135.427,=
+176.879,121.566,193.364,121.566C209.848,121.566,226.333,125.574,242.818,125=
+.574C259.303,125.574,275.788,119.813,292.273,116.723C308.758,113.634,325.24=
+2,107.037,341.727,107.037C358.212,107.037,374.697,112.548,391.182,112.548C4=
+07.667,112.548,424.152,106.286,440.636,103.196C457.121,100.107,473.606,97.4=
+07,490.091,94.011C506.576,90.615,523.061,86.858,539.545,82.822C556.03,78.78=
+6,572.515,74.291,589,69.796"></path><g class=3D"recharts-layer"></g></g></s=
+vg><div class=3D"recharts-legend-wrapper" style=3D"position: absolute; widt=
+h: 604px; height: auto; left: -15px; bottom: 0px;"><ul class=3D"recharts-de=
+fault-legend" style=3D"padding: 0px; margin: 0px; text-align: center;"><li =
+class=3D"recharts-legend-item legend-item-0" style=3D"display: inline-block=
+; margin-right: 10px;"><svg class=3D"recharts-surface" width=3D"8" height=
+=3D"8" viewBox=3D"0 0 32 32" style=3D"display: inline-block; vertical-align=
+: middle; margin-right: 4px;"><title></title><desc></desc><path fill=3D"#58=
+a6ff" cx=3D"16" cy=3D"16" class=3D"recharts-symbols" transform=3D"translate=
+(16, 16)" d=3D"M16,0A16,16,0,1,1,-16,0A16,16,0,1,1,16,0"></path></svg><span=
+ class=3D"recharts-legend-item-text" style=3D"color: rgb(88, 166, 255);"><s=
+pan style=3D"color: rgb(139, 148, 158); font-size: 12px; text-transform: ca=
+pitalize;">orders</span></span></li><li class=3D"recharts-legend-item legen=
+d-item-1" style=3D"display: inline-block; margin-right: 10px;"><svg class=
+=3D"recharts-surface" width=3D"8" height=3D"8" viewBox=3D"0 0 32 32" style=
+=3D"display: inline-block; vertical-align: middle; margin-right: 4px;"><tit=
+le></title><desc></desc><path fill=3D"#a371f7" cx=3D"16" cy=3D"16" class=3D=
+"recharts-symbols" transform=3D"translate(16, 16)" d=3D"M16,0A16,16,0,1,1,-=
+16,0A16,16,0,1,1,16,0"></path></svg><span class=3D"recharts-legend-item-tex=
+t" style=3D"color: rgb(163, 113, 247);"><span style=3D"color: rgb(139, 148,=
+ 158); font-size: 12px; text-transform: capitalize;">customers</span></span=
+></li></ul></div><div tabindex=3D"-1" class=3D"recharts-tooltip-wrapper rec=
+harts-tooltip-wrapper-right recharts-tooltip-wrapper-bottom" style=3D"visib=
+ility: hidden; pointer-events: none; position: absolute; top: 0px; left: 0p=
+x; transform: translate(45px, 10px);"><div class=3D"recharts-default-toolti=
+p" style=3D"margin: 0px; padding: 8px 12px; background: rgb(22, 27, 34); bo=
+rder: 1px solid rgb(48, 54, 61); white-space: nowrap; border-radius: 8px; f=
+ont-size: 12px; color: rgb(230, 237, 243); font-family: Inter, sans-serif;"=
+><p class=3D"recharts-tooltip-label" style=3D"margin: 0px 0px 4px; color: r=
+gb(139, 148, 158);"></p></div></div></div></div></div><div class=3D"chart-c=
+ard"><h3>Sales by Category</h3><p class=3D"chart-sub">Revenue distribution =
+across categories</p><div class=3D"recharts-responsive-container" style=3D"=
+width: 100%; height: 280px; min-width: 0px;"><div class=3D"recharts-wrapper=
+" style=3D"position: relative; cursor: default; width: 100%; height: 100%; =
+max-height: 280px; max-width: 594px;"><svg class=3D"recharts-surface" width=
+=3D"594" height=3D"280" viewBox=3D"0 0 594 280" style=3D"width: 100%; heigh=
+t: 100%;"><title></title><desc></desc><defs><clipPath id=3D"recharts11-clip=
+"><rect x=3D"100" y=3D"0" height=3D"250" width=3D"474"></rect></clipPath></=
+defs><g class=3D"recharts-layer recharts-cartesian-axis recharts-xAxis xAxi=
+s"><g class=3D"recharts-cartesian-axis-ticks"><g class=3D"recharts-layer re=
+charts-cartesian-axis-tick"><text orientation=3D"bottom" width=3D"474" heig=
+ht=3D"30" stroke=3D"none" font-size=3D"12" x=3D"100" y=3D"258" class=3D"rec=
+harts-text recharts-cartesian-axis-tick-value" text-anchor=3D"middle" fill=
+=3D"#8b949e"><tspan x=3D"100" dy=3D"0.71em">$0k</tspan></text></g><g class=
+=3D"recharts-layer recharts-cartesian-axis-tick"><text orientation=3D"botto=
+m" width=3D"474" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"218.5"=
+ y=3D"258" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-=
+anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"218.5" dy=3D"0.71em">$35k</t=
+span></text></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><t=
+ext orientation=3D"bottom" width=3D"474" height=3D"30" stroke=3D"none" font=
+-size=3D"12" x=3D"337" y=3D"258" class=3D"recharts-text recharts-cartesian-=
+axis-tick-value" text-anchor=3D"middle" fill=3D"#8b949e"><tspan x=3D"337" d=
+y=3D"0.71em">$70k</tspan></text></g><g class=3D"recharts-layer recharts-car=
+tesian-axis-tick"><text orientation=3D"bottom" width=3D"474" height=3D"30" =
+stroke=3D"none" font-size=3D"12" x=3D"455.5" y=3D"258" class=3D"recharts-te=
+xt recharts-cartesian-axis-tick-value" text-anchor=3D"middle" fill=3D"#8b94=
+9e"><tspan x=3D"455.5" dy=3D"0.71em">$105k</tspan></text></g><g class=3D"re=
+charts-layer recharts-cartesian-axis-tick"><text orientation=3D"bottom" wid=
+th=3D"474" height=3D"30" stroke=3D"none" font-size=3D"12" x=3D"574" y=3D"25=
+8" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=
+=3D"middle" fill=3D"#8b949e"><tspan x=3D"574" dy=3D"0.71em">$140k</tspan></=
+text></g></g></g><g class=3D"recharts-layer recharts-cartesian-axis rechart=
+s-yAxis yAxis"><g class=3D"recharts-cartesian-axis-ticks"><g class=3D"recha=
+rts-layer recharts-cartesian-axis-tick"><text orientation=3D"left" width=3D=
+"90" height=3D"250" stroke=3D"none" font-size=3D"12" x=3D"92" y=3D"20.83333=
+3333333332" class=3D"recharts-text recharts-cartesian-axis-tick-value" text=
+-anchor=3D"end" fill=3D"#8b949e"><tspan x=3D"92" dy=3D"0.355em">Electronics=
+</tspan></text></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"=
+><text orientation=3D"left" width=3D"90" height=3D"250" stroke=3D"none" fon=
+t-size=3D"12" x=3D"92" y=3D"62.5" class=3D"recharts-text recharts-cartesian=
+-axis-tick-value" text-anchor=3D"end" fill=3D"#8b949e"><tspan x=3D"92" dy=
+=3D"0.355em">Fashion</tspan></text></g><g class=3D"recharts-layer recharts-=
+cartesian-axis-tick"><text orientation=3D"left" width=3D"90" height=3D"250"=
+ stroke=3D"none" font-size=3D"12" x=3D"92" y=3D"104.16666666666666" class=
+=3D"recharts-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" f=
+ill=3D"#8b949e"><tspan x=3D"92" dy=3D"-0.14500000000000002em">Home &amp;</t=
+span><tspan x=3D"92" dy=3D"1em">Living</tspan></text></g><g class=3D"rechar=
+ts-layer recharts-cartesian-axis-tick"><text orientation=3D"left" width=3D"=
+90" height=3D"250" stroke=3D"none" font-size=3D"12" x=3D"92" y=3D"145.83333=
+333333334" class=3D"recharts-text recharts-cartesian-axis-tick-value" text-=
+anchor=3D"end" fill=3D"#8b949e"><tspan x=3D"92" dy=3D"0.355em">Beauty</tspa=
+n></text></g><g class=3D"recharts-layer recharts-cartesian-axis-tick"><text=
+ orientation=3D"left" width=3D"90" height=3D"250" stroke=3D"none" font-size=
+=3D"12" x=3D"92" y=3D"187.5" class=3D"recharts-text recharts-cartesian-axis=
+-tick-value" text-anchor=3D"end" fill=3D"#8b949e"><tspan x=3D"92" dy=3D"0.3=
+55em">Sports</tspan></text></g><g class=3D"recharts-layer recharts-cartesia=
+n-axis-tick"><text orientation=3D"left" width=3D"90" height=3D"250" stroke=
+=3D"none" font-size=3D"12" x=3D"92" y=3D"229.16666666666666" class=3D"recha=
+rts-text recharts-cartesian-axis-tick-value" text-anchor=3D"end" fill=3D"#8=
+b949e"><tspan x=3D"92" dy=3D"0.355em">Books</tspan></text></g></g></g><g cl=
+ass=3D"recharts-cartesian-grid"><g class=3D"recharts-cartesian-grid-vertica=
+l"><line stroke=3D"#30363d" stroke-dasharray=3D"3 3" fill=3D"none" x=3D"100=
+" y=3D"0" width=3D"474" height=3D"250" x1=3D"100" y1=3D"0" x2=3D"100" y2=3D=
+"250"></line><line stroke=3D"#30363d" stroke-dasharray=3D"3 3" fill=3D"none=
+" x=3D"100" y=3D"0" width=3D"474" height=3D"250" x1=3D"218.5" y1=3D"0" x2=
+=3D"218.5" y2=3D"250"></line><line stroke=3D"#30363d" stroke-dasharray=3D"3=
+ 3" fill=3D"none" x=3D"100" y=3D"0" width=3D"474" height=3D"250" x1=3D"337"=
+ y1=3D"0" x2=3D"337" y2=3D"250"></line><line stroke=3D"#30363d" stroke-dash=
+array=3D"3 3" fill=3D"none" x=3D"100" y=3D"0" width=3D"474" height=3D"250" =
+x1=3D"455.5" y1=3D"0" x2=3D"455.5" y2=3D"250"></line><line stroke=3D"#30363=
+d" stroke-dasharray=3D"3 3" fill=3D"none" x=3D"100" y=3D"0" width=3D"474" h=
+eight=3D"250" x1=3D"574" y1=3D"0" x2=3D"574" y2=3D"250"></line></g></g><g c=
+lass=3D"recharts-layer recharts-bar"><g class=3D"recharts-layer recharts-ba=
+r-rectangles"><g class=3D"recharts-layer"><g class=3D"recharts-layer rechar=
+ts-bar-rectangle"><path x=3D"100" y=3D"10" width=3D"434.7257142857144" heig=
+ht=3D"20" radius=3D"0,4,4,0" color=3D"#22c55e" fill=3D"#22c55e" class=3D"re=
+charts-rectangle" d=3D"M100,10L 530.7257142857144,10A 4,4,0,0,1,
+        534.7257142857144,14L 534.7257142857144,26A 4,4,0,0,1,
+        530.7257142857144,30L 100,30Z"></path></g><g class=3D"recharts-laye=
+r recharts-bar-rectangle"><path x=3D"100" y=3D"51.666666666666664" width=3D=
+"302.6828571428572" height=3D"20" radius=3D"0,4,4,0" color=3D"#58a6ff" fill=
+=3D"#58a6ff" class=3D"recharts-rectangle" d=3D"M100,51.666666666666664L 398=
+.6828571428572,51.666666666666664A 4,4,0,0,1,
+        402.6828571428572,55.666666666666664L 402.6828571428572,67.66666666=
+666666A 4,4,0,0,1,
+        398.6828571428572,71.66666666666666L 100,71.66666666666666Z"></path=
+></g><g class=3D"recharts-layer recharts-bar-rectangle"><path x=3D"100" y=
+=3D"93.33333333333333" width=3D"227.51999999999998" height=3D"20" radius=3D=
+"0,4,4,0" color=3D"#a371f7" fill=3D"#a371f7" class=3D"recharts-rectangle" d=
+=3D"M100,93.33333333333333L 323.52,93.33333333333333A 4,4,0,0,1,
+        327.52,97.33333333333333L 327.52,109.33333333333333A 4,4,0,0,1,
+        323.52,113.33333333333333L 100,113.33333333333333Z"></path></g><g c=
+lass=3D"recharts-layer recharts-bar-rectangle"><path x=3D"100" y=3D"135" wi=
+dth=3D"154.38857142857142" height=3D"20" radius=3D"0,4,4,0" color=3D"#f778b=
+a" fill=3D"#f778ba" class=3D"recharts-rectangle" d=3D"M100,135L 250.3885714=
+2857142,135A 4,4,0,0,1,
+        254.38857142857142,139L 254.38857142857142,151A 4,4,0,0,1,
+        250.38857142857142,155L 100,155Z"></path></g><g class=3D"recharts-l=
+ayer recharts-bar-rectangle"><path x=3D"100" y=3D"176.66666666666666" width=
+=3D"131.70428571428573" height=3D"20" radius=3D"0,4,4,0" color=3D"#f0883e" =
+fill=3D"#f0883e" class=3D"recharts-rectangle" d=3D"M100,176.66666666666666L=
+ 227.70428571428573,176.66666666666666A 4,4,0,0,1,
+        231.70428571428573,180.66666666666666L 231.70428571428573,192.66666=
+666666666A 4,4,0,0,1,
+        227.70428571428573,196.66666666666666L 100,196.66666666666666Z"></p=
+ath></g><g class=3D"recharts-layer recharts-bar-rectangle"><path x=3D"100" =
+y=3D"218.33333333333331" width=3D"74.82428571428571" height=3D"20" radius=
+=3D"0,4,4,0" color=3D"#39d0c8" fill=3D"#39d0c8" class=3D"recharts-rectangle=
+" d=3D"M100,218.33333333333331L 170.8242857142857,218.33333333333331A 4,4,0=
+,0,1,
+        174.8242857142857,222.33333333333331L 174.8242857142857,234.3333333=
+3333331A 4,4,0,0,1,
+        170.8242857142857,238.33333333333331L 100,238.33333333333331Z"></pa=
+th></g></g></g><g class=3D"recharts-layer"></g></g></svg><div tabindex=3D"-=
+1" class=3D"recharts-tooltip-wrapper recharts-tooltip-wrapper-right rechart=
+s-tooltip-wrapper-bottom" style=3D"visibility: hidden; pointer-events: none=
+; position: absolute; top: 0px; left: 0px; transform: translate(100px, 10px=
+);"><div class=3D"recharts-default-tooltip" style=3D"margin: 0px; padding: =
+8px 12px; background: rgb(22, 27, 34); border: 1px solid rgb(48, 54, 61); w=
+hite-space: nowrap; border-radius: 8px; font-size: 12px; color: rgb(230, 23=
+7, 243); font-family: Inter, sans-serif;"><p class=3D"recharts-tooltip-labe=
+l" style=3D"margin: 0px;"></p></div></div></div></div></div></div><div clas=
+s=3D"marketing-grid"><div class=3D"marketing-card"><div class=3D"marketing-=
+icon" style=3D"background: rgba(34, 197, 94, 0.12);"><svg viewBox=3D"0 0 24=
+ 24" fill=3D"none" stroke=3D"#22c55e" stroke-width=3D"2" stroke-linecap=3D"=
+round" stroke-linejoin=3D"round" width=3D"20" height=3D"20"><path d=3D"M17 =
+21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path><circle cx=3D"9" cy=3D"7" r=
+=3D"4"></circle><path d=3D"M23 21v-2a4 4 0 0 0-3-3.87"></path><path d=3D"M1=
+6 3.13a4 4 0 0 1 0 7.75"></path></svg></div><div class=3D"marketing-info"><=
+h4>Total Traffic</h4><div class=3D"m-value">2.4M</div><div class=3D"m-sub">=
+Unique visitors this month</div><div class=3D"marketing-bar-wrap"><div clas=
+s=3D"marketing-bar" style=3D"width: 72%; background: rgb(34, 197, 94);"></d=
+iv></div></div></div><div class=3D"marketing-card"><div class=3D"marketing-=
+icon" style=3D"background: rgba(88, 166, 255, 0.12);"><svg viewBox=3D"0 0 2=
+4 24" fill=3D"none" stroke=3D"#58a6ff" stroke-width=3D"2" stroke-linecap=3D=
+"round" stroke-linejoin=3D"round" width=3D"20" height=3D"20"><polyline poin=
+ts=3D"22 7 13.5 15.5 8.5 10.5 2 17"></polyline><polyline points=3D"16 7 22 =
+7 22 13"></polyline></svg></div><div class=3D"marketing-info"><h4>Conversio=
+n Rate</h4><div class=3D"m-value">4.8%</div><div class=3D"m-sub">Visits to =
+purchases</div><div class=3D"marketing-bar-wrap"><div class=3D"marketing-ba=
+r" style=3D"width: 48%; background: rgb(88, 166, 255);"></div></div></div><=
+/div><div class=3D"marketing-card"><div class=3D"marketing-icon" style=3D"b=
+ackground: rgba(163, 113, 247, 0.12);"><svg viewBox=3D"0 0 24 24" fill=3D"n=
+one" stroke=3D"#a371f7" stroke-width=3D"2" stroke-linecap=3D"round" stroke-=
+linejoin=3D"round" width=3D"20" height=3D"20"><line x1=3D"12" y1=3D"1" x2=
+=3D"12" y2=3D"23"></line><path d=3D"M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0=
+ 0 1 0 7H6"></path></svg></div><div class=3D"marketing-info"><h4>Avg Order =
+Value</h4><div class=3D"m-value">$86.40</div><div class=3D"m-sub">Per trans=
+action</div><div class=3D"marketing-bar-wrap"><div class=3D"marketing-bar" =
+style=3D"width: 62%; background: rgb(163, 113, 247);"></div></div></div></d=
+iv><div class=3D"marketing-card"><div class=3D"marketing-icon" style=3D"bac=
+kground: rgba(240, 136, 62, 0.12);"><svg viewBox=3D"0 0 24 24" fill=3D"none=
+" stroke=3D"#f0883e" stroke-width=3D"2" stroke-linecap=3D"round" stroke-lin=
+ejoin=3D"round" width=3D"20" height=3D"20"><path d=3D"M20.84 4.61a5.5 5.5 0=
+ 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7=
+.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"></path></svg></div><div class=3D"=
+marketing-info"><h4>Customer Retention</h4><div class=3D"m-value">68%</div>=
+<div class=3D"m-sub">Repeat purchase rate</div><div class=3D"marketing-bar-=
+wrap"><div class=3D"marketing-bar" style=3D"width: 68%; background: rgb(240=
+, 136, 62);"></div></div></div></div><div class=3D"marketing-card"><div cla=
+ss=3D"marketing-icon" style=3D"background: rgba(248, 81, 73, 0.12);"><svg v=
+iewBox=3D"0 0 24 24" fill=3D"none" stroke=3D"#f85149" stroke-width=3D"2" st=
+roke-linecap=3D"round" stroke-linejoin=3D"round" width=3D"20" height=3D"20"=
+><circle cx=3D"9" cy=3D"21" r=3D"1"></circle><circle cx=3D"20" cy=3D"21" r=
+=3D"1"></circle><path d=3D"M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 =
+0 2-1.61L23 6H6"></path></svg></div><div class=3D"marketing-info"><h4>Cart =
+Abandonment</h4><div class=3D"m-value">31.2%</div><div class=3D"m-sub">Aban=
+doned carts this month</div><div class=3D"marketing-bar-wrap"><div class=3D=
+"marketing-bar" style=3D"width: 31%; background: rgb(248, 81, 73);"></div><=
+/div></div></div><div class=3D"marketing-card"><div class=3D"marketing-icon=
+" style=3D"background: rgba(57, 208, 200, 0.12);"><svg viewBox=3D"0 0 24 24=
+" fill=3D"none" stroke=3D"#39d0c8" stroke-width=3D"2" stroke-linecap=3D"rou=
+nd" stroke-linejoin=3D"round" width=3D"20" height=3D"20"><path d=3D"M4 4h16=
+c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></pat=
+h><polyline points=3D"22,6 12,13 2,6"></polyline></svg></div><div class=3D"=
+marketing-info"><h4>Email Open Rate</h4><div class=3D"m-value">24.6%</div><=
+div class=3D"m-sub">Average campaign open rate</div><div class=3D"marketing=
+-bar-wrap"><div class=3D"marketing-bar" style=3D"width: 25%; background: rg=
+b(57, 208, 200);"></div></div></div></div></div><div class=3D"tables-row"><=
+div class=3D"table-card"><h3>Top Products</h3><p class=3D"chart-sub">Best-s=
+elling items by revenue</p><table><thead><tr><th>#</th><th>Product</th><th>=
+Category</th><th>Sold</th><th>Revenue</th></tr></thead><tbody><tr><td><span=
+ class=3D"rank-badge rank-1">1</span></td><td style=3D"font-weight: 500;">W=
+ireless Earbuds Pro</td><td><span class=3D"category-tag"><span class=3D"cat=
+-dot" style=3D"background: rgb(34, 197, 94);"></span>Electronics</span></td=
+><td>1.247</td><td class=3D"revenue-cell">$74.820</td></tr><tr><td><span cl=
+ass=3D"rank-badge rank-2">2</span></td><td style=3D"font-weight: 500;">Smar=
+t Watch Ultra</td><td><span class=3D"category-tag"><span class=3D"cat-dot" =
+style=3D"background: rgb(34, 197, 94);"></span>Electronics</span></td><td>8=
+92</td><td class=3D"revenue-cell">$62.440</td></tr><tr><td><span class=3D"r=
+ank-badge rank-3">3</span></td><td style=3D"font-weight: 500;">Premium Skin=
+care Set</td><td><span class=3D"category-tag"><span class=3D"cat-dot" style=
+=3D"background: rgb(247, 120, 186);"></span>Beauty</span></td><td>756</td><=
+td class=3D"revenue-cell">$45.360</td></tr><tr><td><span class=3D"rank-badg=
+e rank-default">4</span></td><td style=3D"font-weight: 500;">Running Shoes =
+Elite</td><td><span class=3D"category-tag"><span class=3D"cat-dot" style=3D=
+"background: rgb(240, 136, 62);"></span>Sports</span></td><td>634</td><td c=
+lass=3D"revenue-cell">$38.040</td></tr><tr><td><span class=3D"rank-badge ra=
+nk-default">5</span></td><td style=3D"font-weight: 500;">Laptop Stand Pro</=
+td><td><span class=3D"category-tag"><span class=3D"cat-dot" style=3D"backgr=
+ound: rgb(34, 197, 94);"></span>Electronics</span></td><td>589</td><td clas=
+s=3D"revenue-cell">$35.340</td></tr><tr><td><span class=3D"rank-badge rank-=
+default">6</span></td><td style=3D"font-weight: 500;">Winter Jacket</td><td=
+><span class=3D"category-tag"><span class=3D"cat-dot" style=3D"background: =
+rgb(88, 166, 255);"></span>Fashion</span></td><td>521</td><td class=3D"reve=
+nue-cell">$31.260</td></tr></tbody></table></div><div class=3D"table-card">=
+<h3>Recent Orders</h3><p class=3D"chart-sub">Latest customer transactions</=
+p><table><thead><tr><th>Order ID</th><th>Customer</th><th>Date</th><th>Tota=
+l</th><th>Status</th></tr></thead><tbody><tr><td class=3D"order-id">ORD-784=
+1</td><td>Alice Johnson</td><td class=3D"date-cell">2025-12-18</td><td clas=
+s=3D"revenue-cell">$129.99</td><td><span class=3D"status-badge delivered"><=
+span class=3D"dot"></span>Delivered</span></td></tr><tr><td class=3D"order-=
+id">ORD-7840</td><td>Mark Chen</td><td class=3D"date-cell">2025-12-18</td><=
+td class=3D"revenue-cell">$89.50</td><td><span class=3D"status-badge proces=
+sing"><span class=3D"dot"></span>Processing</span></td></tr><tr><td class=
+=3D"order-id">ORD-7839</td><td>Sarah Miller</td><td class=3D"date-cell">202=
+5-12-17</td><td class=3D"revenue-cell">$234.00</td><td><span class=3D"statu=
+s-badge delivered"><span class=3D"dot"></span>Delivered</span></td></tr><tr=
+><td class=3D"order-id">ORD-7838</td><td>David Park</td><td class=3D"date-c=
+ell">2025-12-17</td><td class=3D"revenue-cell">$56.75</td><td><span class=
+=3D"status-badge pending"><span class=3D"dot"></span>Pending</span></td></t=
+r><tr><td class=3D"order-id">ORD-7837</td><td>Emma Wilson</td><td class=3D"=
+date-cell">2025-12-16</td><td class=3D"revenue-cell">$189.00</td><td><span =
+class=3D"status-badge cancelled"><span class=3D"dot"></span>Cancelled</span=
+></td></tr><tr><td class=3D"order-id">ORD-7836</td><td>James Lee</td><td cl=
+ass=3D"date-cell">2025-12-16</td><td class=3D"revenue-cell">$78.25</td><td>=
+<span class=3D"status-badge delivered"><span class=3D"dot"></span>Delivered=
+</span></td></tr></tbody></table></div></div><div class=3D"campaign-card"><=
+h3>Marketing Campaigns</h3><p class=3D"chart-sub">Performance across active=
+ and completed campaigns</p><table><thead><tr><th>Campaign</th><th>Spend</t=
+h><th>Revenue</th><th>ROI</th><th>Status</th></tr></thead><tbody><tr><td st=
+yle=3D"font-weight: 500;">Spring Sale 2025</td><td>$4.200</td><td class=3D"=
+revenue-cell">$28.400</td><td style=3D"color: rgb(34, 197, 94); font-weight=
+: 600;">576%</td><td><span class=3D"status-badge active"><span class=3D"dot=
+"></span>Active</span></td></tr><tr><td style=3D"font-weight: 500;">Black F=
+riday</td><td>$8.500</td><td class=3D"revenue-cell">$68.700</td><td style=
+=3D"color: rgb(34, 197, 94); font-weight: 600;">708%</td><td><span class=3D=
+"status-badge processing"><span class=3D"dot"></span>Completed</span></td><=
+/tr><tr><td style=3D"font-weight: 500;">New Year Promo</td><td>$3.600</td><=
+td class=3D"revenue-cell">$18.900</td><td style=3D"color: rgb(34, 197, 94);=
+ font-weight: 600;">425%</td><td><span class=3D"status-badge processing"><s=
+pan class=3D"dot"></span>Completed</span></td></tr><tr><td style=3D"font-we=
+ight: 500;">Flash Deals</td><td>$2.100</td><td class=3D"revenue-cell">$12.4=
+00</td><td style=3D"color: rgb(34, 197, 94); font-weight: 600;">490%</td><t=
+d><span class=3D"status-badge active"><span class=3D"dot"></span>Active</sp=
+an></td></tr><tr><td style=3D"font-weight: 500;">Brand Awareness</td><td>$5=
+.800</td><td class=3D"revenue-cell">$8.900</td><td style=3D"color: rgb(248,=
+ 81, 73); font-weight: 600;">53%</td><td><span class=3D"status-badge paused=
+"><span class=3D"dot"></span>Paused</span></td></tr></tbody></table></div><=
+/div></div>
+
+ =20
+<!-- Code injected by live-server -->
+
+
+
+<span id=3D"recharts_measurement_span" aria-hidden=3D"true" style=3D"positi=
+on: absolute; top: -20000px; left: 0px; padding: 0px; margin: 0px; border-w=
+idth: medium; border-style: none; border-color: currentcolor; border-image:=
+ initial; white-space: pre; font-size: 12px; letter-spacing: normal;">Elect=
+ronics</span></body></html>
+------MultipartBoundary--jmKnjgJdZ3XMUVfB5mYD16xDmlhTolvbzERx7RA0Je----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap
+
+@charset "utf-8";
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2") format("woff2"); unicode-range: U+460-=
+52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2") format("woff2"); unicode-range: U+301,=
+ U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2") format("woff2"); unicode-range: U+1F00=
+-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2") format("woff2"); unicode-range: U+370-=
+377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2") format("woff2"); unicode-range: U+102-=
+103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+30=
+3-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa25L7SUc.woff2") format("woff2"); unicode-range: U+100-=
+2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D0=
+0-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,=
+ U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 400; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1ZL7.woff2") format("woff2"); unicode-range: U+0-FF, U=
++131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+200=
+0-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2") format("woff2"); unicode-range: U+460-=
+52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2") format("woff2"); unicode-range: U+301,=
+ U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2") format("woff2"); unicode-range: U+1F00=
+-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2") format("woff2"); unicode-range: U+370-=
+377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2") format("woff2"); unicode-range: U+102-=
+103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+30=
+3-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa25L7SUc.woff2") format("woff2"); unicode-range: U+100-=
+2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D0=
+0-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,=
+ U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 500; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1ZL7.woff2") format("woff2"); unicode-range: U+0-FF, U=
++131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+200=
+0-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2JL7SUc.woff2") format("woff2"); unicode-range: U+460-=
+52F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa0ZL7SUc.woff2") format("woff2"); unicode-range: U+301,=
+ U+400-45F, U+490-491, U+4B0-4B1, U+2116; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2ZL7SUc.woff2") format("woff2"); unicode-range: U+1F00=
+-1FFF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1pL7SUc.woff2") format("woff2"); unicode-range: U+370-=
+377, U+37A-37F, U+384-38A, U+38C, U+38E-3A1, U+3A3-3FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa2pL7SUc.woff2") format("woff2"); unicode-range: U+102-=
+103, U+110-111, U+128-129, U+168-169, U+1A0-1A1, U+1AF-1B0, U+300-301, U+30=
+3-304, U+308-309, U+323, U+329, U+1EA0-1EF9, U+20AB; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa25L7SUc.woff2") format("woff2"); unicode-range: U+100-=
+2BA, U+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D0=
+0-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113,=
+ U+2C60-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Inter; font-style: normal; font-weight: 600; font=
+-display: swap; src: url("https://fonts.gstatic.com/s/inter/v20/UcC73FwrK3i=
+LTeHuS_nVMrMxCp50SjIa1ZL7.woff2") format("woff2"); unicode-range: U+0-FF, U=
++131, U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+200=
+0-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Poppins; font-style: normal; font-weight: 600; fo=
+nt-display: swap; src: url("https://fonts.gstatic.com/s/poppins/v24/pxiByp8=
+kv8JHgFVrLEj6Z11lFc-K.woff2") format("woff2"); unicode-range: U+900-97F, U+=
+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0=
+-A8FF, U+11B00-11B09; }
+
+@font-face { font-family: Poppins; font-style: normal; font-weight: 600; fo=
+nt-display: swap; src: url("https://fonts.gstatic.com/s/poppins/v24/pxiByp8=
+kv8JHgFVrLEj6Z1JlFc-K.woff2") format("woff2"); unicode-range: U+100-2BA, U+=
+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF,=
+ U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60=
+-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Poppins; font-style: normal; font-weight: 600; fo=
+nt-display: swap; src: url("https://fonts.gstatic.com/s/poppins/v24/pxiByp8=
+kv8JHgFVrLEj6Z1xlFQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, =
+U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F=
+, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+@font-face { font-family: Poppins; font-style: normal; font-weight: 700; fo=
+nt-display: swap; src: url("https://fonts.gstatic.com/s/poppins/v24/pxiByp8=
+kv8JHgFVrLCz7Z11lFc-K.woff2") format("woff2"); unicode-range: U+900-97F, U+=
+1CD0-1CF9, U+200C-200D, U+20A8, U+20B9, U+20F0, U+25CC, U+A830-A839, U+A8E0=
+-A8FF, U+11B00-11B09; }
+
+@font-face { font-family: Poppins; font-style: normal; font-weight: 700; fo=
+nt-display: swap; src: url("https://fonts.gstatic.com/s/poppins/v24/pxiByp8=
+kv8JHgFVrLCz7Z1JlFc-K.woff2") format("woff2"); unicode-range: U+100-2BA, U+=
+2BD-2C5, U+2C7-2CC, U+2CE-2D7, U+2DD-2FF, U+304, U+308, U+329, U+1D00-1DBF,=
+ U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60=
+-2C7F, U+A720-A7FF; }
+
+@font-face { font-family: Poppins; font-style: normal; font-weight: 700; fo=
+nt-display: swap; src: url("https://fonts.gstatic.com/s/poppins/v24/pxiByp8=
+kv8JHgFVrLCz7Z1xlFQ.woff2") format("woff2"); unicode-range: U+0-FF, U+131, =
+U+152-153, U+2BB-2BC, U+2C6, U+2DA, U+2DC, U+304, U+308, U+329, U+2000-206F=
+, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+------MultipartBoundary--jmKnjgJdZ3XMUVfB5mYD16xDmlhTolvbzERx7RA0Je----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: cid:css-a4fd26b7-74b6-4c56-8953-dbed62b6a10f@mhtml.blink
+
+@charset "utf-8";
+
+*, ::before, ::after { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+:root { --bg: #0d1117; --card: #161b22; --card-hover: #1c2128; --border: #3=
+0363d; --primary: #22c55e; --text: #e6edf3; --text-muted: #8b949e; --input-=
+bg: #21262d; --accent-blue: #58a6ff; --accent-purple: #a371f7; --accent-ora=
+nge: #f0883e; --accent-pink: #f778ba; --accent-cyan: #39d0c8; --error: #f85=
+149; --success: #22c55e; --radius-card: 12px; --radius-input: 8px; }
+
+body { font-family: Inter, sans-serif; background-color: var(--bg); backgro=
+und-image: radial-gradient(at 15% 0%, rgba(34, 197, 94, 0.06) 0%, transpare=
+nt 50%), radial-gradient(at 85% 100%, rgba(34, 197, 94, 0.04) 0%, transpare=
+nt 50%); min-height: 100vh; color: var(--text); padding: 28px; }
+
+.dashboard { max-width: 1400px; margin: 0px auto; }
+
+.dash-header { display: flex; align-items: flex-start; justify-content: spa=
+ce-between; margin-bottom: 32px; flex-wrap: wrap; gap: 12px; }
+
+.dash-header h1 { font-family: Poppins, sans-serif; font-weight: 700; font-=
+size: 26px; color: var(--text); }
+
+.dash-header p { font-size: 14px; color: var(--text-muted); margin-top: 2px=
+; }
+
+.header-actions { display: flex; gap: 10px; align-items: center; flex-wrap:=
+ wrap; }
+
+.period-select { background-size: ; background-attachment: ; background-ori=
+gin: ; background-clip: ; background-color: ; border: 1px solid var(--borde=
+r); border-radius: var(--radius-input); color: var(--text); padding: 8px 30=
+px 8px 14px; font-size: 13px; font-family: Inter, sans-serif; cursor: point=
+er; outline: none; transition: border-color 0.2s; appearance: none; backgro=
+und-image: url("data:image/svg+xml,%3Csvg xmlns=3D'http://www.w3.org/2000/s=
+vg' width=3D'12' height=3D'12' viewBox=3D'0 0 24 24' fill=3D'none' stroke=
+=3D'%238b949e' stroke-width=3D'2'%3E%3Cpolyline points=3D'6 9 12 15 18 9'/%=
+3E%3C/svg%3E"); background-repeat: no-repeat; background-position: right 10=
+px center; }
+
+.period-select:focus { border-color: var(--primary); }
+
+.period-select option { background: var(--card); }
+
+.refresh-btn { background: var(--card); border: 1px solid var(--border); bo=
+rder-radius: var(--radius-input); color: var(--text-muted); padding: 8px 14=
+px; font-size: 13px; font-family: Inter, sans-serif; cursor: pointer; displ=
+ay: flex; align-items: center; gap: 6px; transition: border-color 0.2s, col=
+or 0.2s; }
+
+.refresh-btn:hover { border-color: var(--primary); color: var(--primary); }
+
+.refresh-btn svg { width: 14px; height: 14px; }
+
+.kpi-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px=
+; margin-bottom: 24px; }
+
+.kpi-card { background: var(--card); border: 1px solid var(--border); borde=
+r-radius: var(--radius-card); padding: 22px 24px; transition: border-color =
+0.2s, transform 0.15s; }
+
+.kpi-card:hover { border-color: rgb(68, 76, 86); transform: translateY(-2px=
+); }
+
+.kpi-header { display: flex; align-items: center; justify-content: space-be=
+tween; margin-bottom: 12px; }
+
+.kpi-label { font-size: 13px; font-weight: 500; color: var(--text-muted); }
+
+.kpi-icon { width: 36px; height: 36px; border-radius: 8px; display: flex; a=
+lign-items: center; justify-content: center; }
+
+.kpi-icon svg { width: 18px; height: 18px; }
+
+.kpi-value { font-family: Poppins, sans-serif; font-weight: 700; font-size:=
+ 28px; color: var(--text); margin-bottom: 4px; }
+
+.kpi-change { font-size: 12px; font-weight: 500; display: flex; align-items=
+: center; gap: 3px; }
+
+.kpi-change.up { color: var(--success); }
+
+.kpi-change.down { color: var(--error); }
+
+.kpi-change svg { width: 12px; height: 12px; }
+
+.charts-row { display: grid; grid-template-columns: 2fr 1fr; gap: 16px; mar=
+gin-bottom: 24px; }
+
+.charts-row-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; m=
+argin-bottom: 24px; }
+
+.chart-card { background: var(--card); border: 1px solid var(--border); bor=
+der-radius: var(--radius-card); padding: 24px; }
+
+.chart-card h3 { font-family: Poppins, sans-serif; font-weight: 600; font-s=
+ize: 16px; color: var(--text); margin-bottom: 4px; }
+
+.chart-card .chart-sub { font-size: 12px; color: var(--text-muted); margin-=
+bottom: 20px; }
+
+.tables-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; mar=
+gin-bottom: 24px; }
+
+.table-card { background: var(--card); border: 1px solid var(--border); bor=
+der-radius: var(--radius-card); padding: 24px; }
+
+.table-card h3 { font-family: Poppins, sans-serif; font-weight: 600; font-s=
+ize: 16px; color: var(--text); margin-bottom: 4px; }
+
+.table-card .chart-sub { font-size: 12px; color: var(--text-muted); margin-=
+bottom: 16px; }
+
+table { width: 100%; border-collapse: collapse; font-size: 13px; }
+
+thead tr { border-bottom: 1px solid var(--border); }
+
+thead th { text-align: left; padding: 8px 10px; font-weight: 500; color: va=
+r(--text-muted); font-size: 12px; white-space: nowrap; }
+
+tbody tr { border-bottom: 1px solid rgba(48, 54, 61, 0.5); transition: back=
+ground 0.15s; }
+
+tbody tr:last-child { border-bottom-width: medium; border-bottom-style: non=
+e; border-bottom-color: currentcolor; }
+
+tbody tr:hover { background: var(--card-hover); }
+
+tbody td { padding: 11px 10px; color: var(--text); }
+
+.status-badge { display: inline-flex; align-items: center; gap: 5px; paddin=
+g: 3px 8px; border-radius: 20px; font-size: 11px; font-weight: 500; }
+
+.status-badge.delivered { background: rgba(34, 197, 94, 0.12); color: rgb(6=
+3, 185, 80); }
+
+.status-badge.pending { background: rgba(210, 153, 34, 0.12); color: rgb(21=
+0, 153, 34); }
+
+.status-badge.processing { background: rgba(88, 166, 255, 0.12); color: rgb=
+(88, 166, 255); }
+
+.status-badge.cancelled { background: rgba(248, 81, 73, 0.12); color: rgb(2=
+48, 81, 73); }
+
+.status-badge.active { background: rgba(34, 197, 94, 0.12); color: rgb(63, =
+185, 80); }
+
+.status-badge.paused { background: rgba(210, 153, 34, 0.12); color: rgb(210=
+, 153, 34); }
+
+.status-badge .dot { width: 5px; height: 5px; border-radius: 50%; backgroun=
+d: currentcolor; }
+
+.revenue-cell { font-weight: 500; }
+
+.rank-badge { display: inline-flex; align-items: center; justify-content: c=
+enter; width: 22px; height: 22px; border-radius: 6px; font-size: 11px; font=
+-weight: 600; font-family: Poppins, sans-serif; }
+
+.rank-1 { background: rgba(255, 215, 0, 0.15); color: rgb(255, 215, 0); }
+
+.rank-2 { background: rgba(192, 192, 192, 0.12); color: rgb(192, 192, 192);=
+ }
+
+.rank-3 { background: rgba(205, 127, 50, 0.12); color: rgb(205, 127, 50); }
+
+.rank-default { background: rgba(48, 54, 61, 0.5); color: var(--text-muted)=
+; }
+
+.category-tag { display: inline-flex; align-items: center; gap: 5px; paddin=
+g: 2px 8px; border-radius: 4px; font-size: 11px; background: var(--input-bg=
+); color: var(--text-muted); }
+
+.category-tag .cat-dot { width: 6px; height: 6px; border-radius: 50%; }
+
+.order-id { font-family: monospace; font-size: 12px; color: rgb(88, 166, 25=
+5); }
+
+.date-cell { color: var(--text-muted); font-size: 12px; }
+
+.marketing-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap=
+: 16px; margin-bottom: 24px; }
+
+.marketing-card { background: var(--card); border: 1px solid var(--border);=
+ border-radius: var(--radius-card); padding: 20px 24px; display: flex; alig=
+n-items: center; gap: 16px; transition: border-color 0.2s; }
+
+.marketing-card:hover { border-color: rgb(68, 76, 86); }
+
+.marketing-icon { width: 44px; height: 44px; border-radius: 10px; display: =
+flex; align-items: center; justify-content: center; flex-shrink: 0; }
+
+.marketing-icon svg { width: 20px; height: 20px; }
+
+.marketing-info { flex: 1 1 0%; min-width: 0px; }
+
+.marketing-info h4 { font-family: Poppins, sans-serif; font-weight: 600; fo=
+nt-size: 14px; color: var(--text); margin-bottom: 4px; }
+
+.marketing-info .m-value { font-family: Poppins, sans-serif; font-weight: 7=
+00; font-size: 20px; color: var(--text); }
+
+.marketing-info .m-sub { font-size: 12px; color: var(--text-muted); margin-=
+top: 2px; }
+
+.marketing-bar-wrap { margin-top: 6px; height: 4px; background: var(--input=
+-bg); border-radius: 2px; overflow: hidden; }
+
+.marketing-bar { height: 100%; border-radius: 2px; }
+
+.campaign-card { background: var(--card); border: 1px solid var(--border); =
+border-radius: var(--radius-card); padding: 24px; margin-bottom: 24px; }
+
+.campaign-card h3 { font-family: Poppins, sans-serif; font-weight: 600; fon=
+t-size: 16px; color: var(--text); margin-bottom: 4px; }
+
+.campaign-card .chart-sub { font-size: 12px; color: var(--text-muted); marg=
+in-bottom: 16px; }
+
+@media (max-width: 1200px) {
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+  .charts-row, .charts-row-2 { grid-template-columns: 1fr; }
+  .tables-row { grid-template-columns: 1fr; }
+  .marketing-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 768px) {
+  body { padding: 16px; }
+  .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .kpi-card { padding: 16px; }
+  .kpi-value { font-size: 22px; }
+  .marketing-grid { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 480px) {
+  .kpi-grid { grid-template-columns: 1fr; }
+  .dash-header h1 { font-size: 20px; }
+}
+
+::-webkit-scrollbar { width: 6px; height: 6px; }
+
+::-webkit-scrollbar-track { background: var(--bg); }
+
+::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+------MultipartBoundary--jmKnjgJdZ3XMUVfB5mYD16xDmlhTolvbzERx7RA0Je------
