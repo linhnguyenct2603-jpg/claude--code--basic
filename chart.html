@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>E-Commerce Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/react@18/umd/react.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/react-dom@18/umd/react-dom.production.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prop-types@15/prop-types.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/recharts@2.15.0/umd/Recharts.js"></script>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #0d1117;
+      --card: #161b22;
+      --card-hover: #1c2128;
+      --border: #30363d;
+      --primary: #22c55e;
+      --text: #e6edf3;
+      --text-muted: #8b949e;
+      --input-bg: #21262d;
+      --accent-blue: #58a6ff;
+      --accent-purple: #a371f7;
+      --accent-orange: #f0883e;
+      --accent-pink: #f778ba;
+      --accent-cyan: #39d0c8;
+      --error: #f85149;
+      --success: #22c55e;
+      --radius-card: 12px;
+      --radius-input: 8px;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: var(--bg);
+      background-image:
+        radial-gradient(ellipse at 15% 0%, rgba(34, 197, 94, 0.06) 0%, transparent 50%),
+        radial-gradient(ellipse at 85% 100%, rgba(34, 197, 94, 0.04) 0%, transparent 50%);
+      min-height: 100vh;
+      color: var(--text);
+      padding: 28px;
+    }
+
+    .dashboard { max-width: 1400px; margin: 0 auto; }
+
+    .dash-header {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      margin-bottom: 32px;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .dash-header h1 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      color: var(--text);
+    }
+
+    .dash-header p {
+      font-size: 14px;
+      color: var(--text-muted);
+      margin-top: 2px;
+    }
+
+    .header-actions { display: flex; gap: 10px; align-items: center; flex-wrap: wrap; }
+
+    .period-select {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-input);
+      color: var(--text);
+      padding: 8px 30px 8px 14px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      outline: none;
+      transition: border-color 0.2s;
+      -webkit-appearance: none;
+      appearance: none;
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 24 24' fill='none' stroke='%238b949e' stroke-width='2'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+    }
+
+    .period-select:focus { border-color: var(--primary); }
+    .period-select option { background: var(--card); }
+
+    .refresh-btn {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-input);
+      color: var(--text-muted);
+      padding: 8px 14px;
+      font-size: 13px;
+      font-family: 'Inter', sans-serif;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      transition: border-color 0.2s, color 0.2s;
+    }
+
+    .refresh-btn:hover { border-color: var(--primary); color: var(--primary); }
+    .refresh-btn svg { width: 14px; height: 14px; }
+
+    .kpi-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .kpi-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 22px 24px;
+      transition: border-color 0.2s, transform 0.15s;
+    }
+
+    .kpi-card:hover { border-color: #444c56; transform: translateY(-2px); }
+
+    .kpi-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-bottom: 12px;
+    }
+
+    .kpi-label { font-size: 13px; font-weight: 500; color: var(--text-muted); }
+
+    .kpi-icon {
+      width: 36px;
+      height: 36px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .kpi-icon svg { width: 18px; height: 18px; }
+
+    .kpi-value {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 28px;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .kpi-change {
+      font-size: 12px;
+      font-weight: 500;
+      display: flex;
+      align-items: center;
+      gap: 3px;
+    }
+
+    .kpi-change.up { color: var(--success); }
+    .kpi-change.down { color: var(--error); }
+    .kpi-change svg { width: 12px; height: 12px; }
+
+    .charts-row {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .charts-row-2 {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .chart-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 24px;
+    }
+
+    .chart-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .chart-card .chart-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 20px;
+    }
+
+    .tables-row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .table-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 24px;
+    }
+
+    .table-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .table-card .chart-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    thead tr { border-bottom: 1px solid var(--border); }
+    thead th {
+      text-align: left;
+      padding: 8px 10px;
+      font-weight: 500;
+      color: var(--text-muted);
+      font-size: 12px;
+      white-space: nowrap;
+    }
+
+    tbody tr {
+      border-bottom: 1px solid rgba(48, 54, 61, 0.5);
+      transition: background 0.15s;
+    }
+
+    tbody tr:last-child { border-bottom: none; }
+    tbody tr:hover { background: var(--card-hover); }
+    tbody td { padding: 11px 10px; color: var(--text); }
+
+    .status-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 3px 8px;
+      border-radius: 20px;
+      font-size: 11px;
+      font-weight: 500;
+    }
+
+    .status-badge.delivered { background: rgba(34,197,94,0.12); color: #3fb950; }
+    .status-badge.pending { background: rgba(210,153,34,0.12); color: #d29922; }
+    .status-badge.processing { background: rgba(88,166,255,0.12); color: #58a6ff; }
+    .status-badge.cancelled { background: rgba(248,81,73,0.12); color: #f85149; }
+    .status-badge.active { background: rgba(34,197,94,0.12); color: #3fb950; }
+    .status-badge.paused { background: rgba(210,153,34,0.12); color: #d29922; }
+
+    .status-badge .dot {
+      width: 5px;
+      height: 5px;
+      border-radius: 50%;
+      background: currentColor;
+    }
+
+    .revenue-cell { font-weight: 500; }
+
+    .rank-badge {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      width: 22px;
+      height: 22px;
+      border-radius: 6px;
+      font-size: 11px;
+      font-weight: 600;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    .rank-1 { background: rgba(255,215,0,0.15); color: #ffd700; }
+    .rank-2 { background: rgba(192,192,192,0.12); color: #c0c0c0; }
+    .rank-3 { background: rgba(205,127,50,0.12); color: #cd7f32; }
+    .rank-default { background: rgba(48,54,61,0.5); color: var(--text-muted); }
+
+    .category-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 5px;
+      padding: 2px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      background: var(--input-bg);
+      color: var(--text-muted);
+    }
+
+    .category-tag .cat-dot { width: 6px; height: 6px; border-radius: 50%; }
+    .order-id { font-family: monospace; font-size: 12px; color: #58a6ff; }
+    .date-cell { color: var(--text-muted); font-size: 12px; }
+
+    .marketing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .marketing-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      gap: 16px;
+      transition: border-color 0.2s;
+    }
+
+    .marketing-card:hover { border-color: #444c56; }
+
+    .marketing-icon {
+      width: 44px;
+      height: 44px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .marketing-icon svg { width: 20px; height: 20px; }
+
+    .marketing-info { flex: 1; min-width: 0; }
+
+    .marketing-info h4 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 14px;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .marketing-info .m-value {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 700;
+      font-size: 20px;
+      color: var(--text);
+    }
+
+    .marketing-info .m-sub { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+    .marketing-bar-wrap {
+      margin-top: 6px;
+      height: 4px;
+      background: var(--input-bg);
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .marketing-bar { height: 100%; border-radius: 2px; }
+
+    .campaign-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-card);
+      padding: 24px;
+      margin-bottom: 24px;
+    }
+
+    .campaign-card h3 {
+      font-family: 'Poppins', sans-serif;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--text);
+      margin-bottom: 4px;
+    }
+
+    .campaign-card .chart-sub {
+      font-size: 12px;
+      color: var(--text-muted);
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 1200px) {
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); }
+      .charts-row, .charts-row-2 { grid-template-columns: 1fr; }
+      .tables-row { grid-template-columns: 1fr; }
+      .marketing-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 768px) {
+      body { padding: 16px; }
+      .kpi-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+      .kpi-card { padding: 16px; }
+      .kpi-value { font-size: 22px; }
+      .marketing-grid { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .kpi-grid { grid-template-columns: 1fr; }
+      .dash-header h1 { font-size: 20px; }
+    }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: var(--bg); }
+    ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script>
+    (function () {
+      var e = React.createElement;
+      var useState = React.useState;
+
+      var R = Recharts;
+
+      // ---------- Mock Data ----------
+      var MONTHLY_SALES = [
+        { month: 'Jan', revenue: 28400, orders: 312, customers: 198 },
+        { month: 'Feb', revenue: 32100, orders: 378, customers: 241 },
+        { month: 'Mar', revenue: 29800, orders: 345, customers: 219 },
+        { month: 'Apr', revenue: 41200, orders: 489, customers: 302 },
+        { month: 'May', revenue: 38900, orders: 456, customers: 278 },
+        { month: 'Jun', revenue: 45600, orders: 534, customers: 331 },
+        { month: 'Jul', revenue: 52100, orders: 612, customers: 389 },
+        { month: 'Aug', revenue: 48700, orders: 578, customers: 356 },
+        { month: 'Sep', revenue: 55300, orders: 648, customers: 412 },
+        { month: 'Oct', revenue: 61200, orders: 721, customers: 467 },
+        { month: 'Nov', revenue: 73400, orders: 865, customers: 534 },
+        { month: 'Dec', revenue: 82100, orders: 967, customers: 612 },
+      ];
+
+      var CATEGORY_DATA = [
+        { category: 'Electronics', sales: 128400, color: '#22c55e' },
+        { category: 'Fashion', sales: 89400, color: '#58a6ff' },
+        { category: 'Home & Living', sales: 67200, color: '#a371f7' },
+        { category: 'Beauty', sales: 45600, color: '#f778ba' },
+        { category: 'Sports', sales: 38900, color: '#f0883e' },
+        { category: 'Books', sales: 22100, color: '#39d0c8' },
+      ];
+
+      var CHANNEL_DATA = [
+        { name: 'Organic Search', value: 38, color: '#22c55e' },
+        { name: 'Paid Ads', value: 27, color: '#58a6ff' },
+        { name: 'Social Media', value: 19, color: '#a371f7' },
+        { name: 'Direct', value: 10, color: '#f0883e' },
+        { name: 'Email', value: 6, color: '#f778ba' },
+      ];
+
+      var CAMPAIGN_DATA = [
+        { campaign: 'Spring Sale 2025', spend: 4200, revenue: 28400, roi: 576, status: 'Active' },
+        { campaign: 'Black Friday', spend: 8500, revenue: 68700, roi: 708, status: 'Completed' },
+        { campaign: 'New Year Promo', spend: 3600, revenue: 18900, roi: 425, status: 'Completed' },
+        { campaign: 'Flash Deals', spend: 2100, revenue: 12400, roi: 490, status: 'Active' },
+        { campaign: 'Brand Awareness', spend: 5800, revenue: 8900, roi: 53, status: 'Paused' },
+      ];
+
+      var TOP_PRODUCTS = [
+        { rank: 1, name: 'Wireless Earbuds Pro', sku: 'WEP-001', category: 'Electronics', sold: 1247, revenue: 74820 },
+        { rank: 2, name: 'Smart Watch Ultra', sku: 'SWU-003', category: 'Electronics', sold: 892, revenue: 62440 },
+        { rank: 3, name: 'Premium Skincare Set', sku: 'PSS-007', category: 'Beauty', sold: 756, revenue: 45360 },
+        { rank: 4, name: 'Running Shoes Elite', sku: 'RSE-012', category: 'Sports', sold: 634, revenue: 38040 },
+        { rank: 5, name: 'Laptop Stand Pro', sku: 'LSP-009', category: 'Electronics', sold: 589, revenue: 35340 },
+        { rank: 6, name: 'Winter Jacket', sku: 'WJK-015', category: 'Fashion', sold: 521, revenue: 31260 },
+      ];
+
+      var RECENT_ORDERS = [
+        { id: 'ORD-7841', customer: 'Alice Johnson', date: '2025-12-18', total: 129.99, status: 'Delivered' },
+        { id: 'ORD-7840', customer: 'Mark Chen', date: '2025-12-18', total: 89.50, status: 'Processing' },
+        { id: 'ORD-7839', customer: 'Sarah Miller', date: '2025-12-17', total: 234.00, status: 'Delivered' },
+        { id: 'ORD-7838', customer: 'David Park', date: '2025-12-17', total: 56.75, status: 'Pending' },
+        { id: 'ORD-7837', customer: 'Emma Wilson', date: '2025-12-16', total: 189.00, status: 'Cancelled' },
+        { id: 'ORD-7836', customer: 'James Lee', date: '2025-12-16', total: 78.25, status: 'Delivered' },
+      ];
+
+      var tooltipStyle = {
+        background: '#161b22',
+        border: '1px solid #30363d',
+        borderRadius: 8,
+        fontSize: 12,
+        color: '#e6edf3',
+        fontFamily: 'Inter, sans-serif',
+        padding: '8px 12px',
+      };
+
+      var axisStyle = { fill: '#8b949e', fontSize: 12 };
+      var gridStyle = { stroke: '#30363d', strokeDasharray: '3 3' };
+
+      // ---------- Helpers ----------
+      function svg(name, attrs) {
+        return e('svg', { viewBox: name.viewBox, fill: attrs.fill || 'none',
+          stroke: attrs.stroke, strokeWidth: attrs.strokeWidth,
+          strokeLinecap: attrs.strokeLinecap, strokeLinejoin: attrs.strokeLinejoin,
+          width: attrs.width, height: attrs.height });
+      }
+
+      function kpiArrowUp() {
+        return e('svg', { viewBox: '0 0 16 16', fill: 'none', stroke: 'currentColor', strokeWidth: '2', strokeLinecap: 'round', width: 12, height: 12 },
+          e('polyline', { points: '8 12 8 4' }),
+          e('polyline', { points: '4 8 8 4 12 8' })
+        );
+      }
+
+      function kpiArrowDown() {
+        return e('svg', { viewBox: '0 0 16 16', fill: 'none', stroke: 'currentColor', strokeWidth: '2', strokeLinecap: 'round', width: 12, height: 12 },
+          e('polyline', { points: '8 4 8 12' }),
+          e('polyline', { points: '4 8 8 12 12 8' })
+        );
+      }
+
+      function KpiCard(props) {
+        var isUp = props.change >= 0;
+        return e('div', { className: 'kpi-card' },
+          e('div', { className: 'kpi-header' },
+            e('span', { className: 'kpi-label' }, props.label),
+            e('div', { className: 'kpi-icon', style: { background: props.iconBg } }, props.icon)
+          ),
+          e('div', { className: 'kpi-value' }, props.value),
+          e('div', { className: 'kpi-change ' + (isUp ? 'up' : 'down') },
+            isUp ? kpiArrowUp() : kpiArrowDown(),
+            ' ' + Math.abs(props.change) + '% ' + props.changeLabel
+          )
+        );
+      }
+
+      function RevenueChart() {
+        return e('div', { className: 'chart-card' },
+          e('h3', null, 'Revenue Overview'),
+          e('p', { className: 'chart-sub' }, 'Monthly revenue trend in USD'),
+          e(R.ResponsiveContainer, { width: '100%', height: 280 },
+            e(R.AreaChart, { data: MONTHLY_SALES, margin: { top: 5, right: 5, left: -15, bottom: 0 } },
+              e(R.Defs, null,
+                e(R.LinearGradient, { id: 'colorRevenue', x1: '0', y1: '0', x2: '0', y2: '1' },
+                  e('stop', { offset: '5%', stopColor: '#22c55e', stopOpacity: 0.2 }),
+                  e('stop', { offset: '95%', stopColor: '#22c55e', stopOpacity: 0 })
+                )
+              ),
+              e(R.XAxis, { dataKey: 'month', tick: axisStyle, axisLine: { stroke: '#30363d' }, tickLine: false }),
+              e(R.YAxis, { tickFormatter: function (v) { return '$' + (v / 1000).toFixed(0) + 'k'; }, tick: axisStyle, axisLine: false, tickLine: false }),
+              e(R.CartesianGrid, { stroke: '#30363d', strokeDasharray: '3 3', vertical: false }),
+              e(R.Tooltip, { contentStyle: tooltipStyle, labelStyle: { color: '#8b949e', marginBottom: 4 },
+                formatter: function (val) { return ['$' + val.toLocaleString(), 'Revenue']; } }),
+              e(R.Area, { type: 'monotone', dataKey: 'revenue', stroke: '#22c55e', strokeWidth: 2,
+                fill: 'url(#colorRevenue)', dot: false, activeDot: { r: 4, fill: '#22c55e' } })
+            )
+          )
+        );
+      }
+
+      function ChannelChart() {
+        return e('div', { className: 'chart-card' },
+          e('h3', null, 'Traffic Sources'),
+          e('p', { className: 'chart-sub' }, 'User acquisition by channel'),
+          e(R.ResponsiveContainer, { width: '100%', height: 220 },
+            e(R.PieChart, null,
+              e(R.Pie, { data: CHANNEL_DATA, cx: '50%', cy: '50%', innerRadius: 60, outerRadius: 90, dataKey: 'value' },
+                CHANNEL_DATA.map(function (d, i) {
+                  return e(R.Cell, { key: i, fill: d.color });
+                })
+              ),
+              e(R.Tooltip, { contentStyle: tooltipStyle,
+                formatter: function (val, name) { return [val + '%', name]; } }),
+              e(R.Legend, { iconType: 'circle', iconSize: 8,
+                formatter: function (value) {
+                  return e('span', { style: { color: '#8b949e', fontSize: 12 } }, value);
+                } })
+            )
+          )
+        );
+      }
+
+      function OrdersChart() {
+        return e('div', { className: 'chart-card' },
+          e('h3', null, 'Orders & Customers'),
+          e('p', { className: 'chart-sub' }, 'Monthly order volume and new customers'),
+          e(R.ResponsiveContainer, { width: '100%', height: 220 },
+            e(R.LineChart, { data: MONTHLY_SALES, margin: { top: 5, right: 5, left: -15, bottom: 0 } },
+              e(R.XAxis, { dataKey: 'month', tick: axisStyle, axisLine: { stroke: '#30363d' }, tickLine: false }),
+              e(R.YAxis, { tick: axisStyle, axisLine: false, tickLine: false }),
+              e(R.CartesianGrid, { stroke: '#30363d', strokeDasharray: '3 3', vertical: false }),
+              e(R.Tooltip, { contentStyle: tooltipStyle, labelStyle: { color: '#8b949e', marginBottom: 4 } }),
+              e(R.Legend, { iconType: 'circle', iconSize: 8,
+                formatter: function (value) {
+                  return e('span', { style: { color: '#8b949e', fontSize: 12, textTransform: 'capitalize' } }, value);
+                } }),
+              e(R.Line, { type: 'monotone', dataKey: 'orders', stroke: '#58a6ff', strokeWidth: 2, dot: false, activeDot: { r: 4, fill: '#58a6ff' } }),
+              e(R.Line, { type: 'monotone', dataKey: 'customers', stroke: '#a371f7', strokeWidth: 2, dot: false, activeDot: { r: 4, fill: '#a371f7' } })
+            )
+          )
+        );
+      }
+
+      function CategoryChart() {
+        return e('div', { className: 'chart-card' },
+          e('h3', null, 'Sales by Category'),
+          e('p', { className: 'chart-sub' }, 'Revenue distribution across categories'),
+          e(R.ResponsiveContainer, { width: '100%', height: 280 },
+            e(R.BarChart, { data: CATEGORY_DATA, layout: 'vertical', margin: { top: 0, right: 20, left: 10, bottom: 0 } },
+              e(R.XAxis, { type: 'number', tickFormatter: function (v) { return '$' + (v / 1000).toFixed(0) + 'k'; },
+                tick: axisStyle, axisLine: false, tickLine: false }),
+              e(R.YAxis, { type: 'category', dataKey: 'category', tick: axisStyle, axisLine: false, tickLine: false, width: 90 }),
+              e(R.CartesianGrid, { stroke: '#30363d', strokeDasharray: '3 3', horizontal: false }),
+              e(R.Tooltip, { contentStyle: tooltipStyle,
+                formatter: function (val) { return ['$' + val.toLocaleString(), 'Sales']; } }),
+              e(R.Bar, { dataKey: 'sales', radius: [0, 4, 4, 0], barSize: 20 },
+                CATEGORY_DATA.map(function (d, i) {
+                  return e(R.Cell, { key: i, fill: d.color });
+                })
+              )
+            )
+          )
+        );
+      }
+
+      function TopProductsTable() {
+        var rows = TOP_PRODUCTS.map(function (p) {
+          var rankCls = 'rank-badge ' + (p.rank <= 3 ? 'rank-' + p.rank : 'rank-default');
+          var catColor = (CATEGORY_DATA.find(function (c) { return c.category === p.category; }) || {}).color || '#8b949e';
+          return e('tr', { key: p.rank },
+            e('td', null, e('span', { className: rankCls }, p.rank)),
+            e('td', { style: { fontWeight: 500 } }, p.name),
+            e('td', null,
+              e('span', { className: 'category-tag' },
+                e('span', { className: 'cat-dot', style: { background: catColor } }),
+                p.category
+              )
+            ),
+            e('td', null, p.sold.toLocaleString()),
+            e('td', { className: 'revenue-cell' }, '$' + p.revenue.toLocaleString())
+          );
+        });
+        return e('div', { className: 'table-card' },
+          e('h3', null, 'Top Products'),
+          e('p', { className: 'chart-sub' }, 'Best-selling items by revenue'),
+          e('table', null,
+            e('thead', null, e('tr', null,
+              e('th', null, '#'),
+              e('th', null, 'Product'),
+              e('th', null, 'Category'),
+              e('th', null, 'Sold'),
+              e('th', null, 'Revenue')
+            )),
+            e('tbody', null, rows)
+          )
+        );
+      }
+
+      function RecentOrdersTable() {
+        var statusCls = { Delivered: 'delivered', Pending: 'pending', Processing: 'processing', Cancelled: 'cancelled' };
+        var rows = RECENT_ORDERS.map(function (o) {
+          return e('tr', { key: o.id },
+            e('td', { className: 'order-id' }, o.id),
+            e('td', null, o.customer),
+            e('td', { className: 'date-cell' }, o.date),
+            e('td', { className: 'revenue-cell' }, '$' + o.total.toFixed(2)),
+            e('td', null,
+              e('span', { className: 'status-badge ' + statusCls[o.status] },
+                e('span', { className: 'dot' }),
+                o.status
+              )
+            )
+          );
+        });
+        return e('div', { className: 'table-card' },
+          e('h3', null, 'Recent Orders'),
+          e('p', { className: 'chart-sub' }, 'Latest customer transactions'),
+          e('table', null,
+            e('thead', null, e('tr', null,
+              e('th', null, 'Order ID'),
+              e('th', null, 'Customer'),
+              e('th', null, 'Date'),
+              e('th', null, 'Total'),
+              e('th', null, 'Status')
+            )),
+            e('tbody', null, rows)
+          )
+        );
+      }
+
+      function MarketingCards() {
+        var cards = [
+          {
+            label: 'Total Traffic', value: '2.4M', sub: 'Unique visitors this month',
+            bar: 72, color: '#22c55e', iconBg: 'rgba(34,197,94,0.12)',
+            icon: e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#22c55e', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 20, height: 20 },
+              e('path', { d: 'M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2' }),
+              e('circle', { cx: 9, cy: 7, r: 4 }),
+              e('path', { d: 'M23 21v-2a4 4 0 0 0-3-3.87' }),
+              e('path', { d: 'M16 3.13a4 4 0 0 1 0 7.75' })
+            )
+          },
+          {
+            label: 'Conversion Rate', value: '4.8%', sub: 'Visits to purchases',
+            bar: 48, color: '#58a6ff', iconBg: 'rgba(88,166,255,0.12)',
+            icon: e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#58a6ff', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 20, height: 20 },
+              e('polyline', { points: '22 7 13.5 15.5 8.5 10.5 2 17' }),
+              e('polyline', { points: '16 7 22 7 22 13' })
+            )
+          },
+          {
+            label: 'Avg Order Value', value: '$86.40', sub: 'Per transaction',
+            bar: 62, color: '#a371f7', iconBg: 'rgba(163,113,247,0.12)',
+            icon: e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#a371f7', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 20, height: 20 },
+              e('line', { x1: 12, y1: 1, x2: 12, y2: 23 }),
+              e('path', { d: 'M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6' })
+            )
+          },
+          {
+            label: 'Customer Retention', value: '68%', sub: 'Repeat purchase rate',
+            bar: 68, color: '#f0883e', iconBg: 'rgba(240,136,62,0.12)',
+            icon: e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#f0883e', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 20, height: 20 },
+              e('path', { d: 'M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z' })
+            )
+          },
+          {
+            label: 'Cart Abandonment', value: '31.2%', sub: 'Abandoned carts this month',
+            bar: 31, color: '#f85149', iconBg: 'rgba(248,81,73,0.12)',
+            icon: e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#f85149', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 20, height: 20 },
+              e('circle', { cx: 9, cy: 21, r: 1 }),
+              e('circle', { cx: 20, cy: 21, r: 1 }),
+              e('path', { d: 'M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6' })
+            )
+          },
+          {
+            label: 'Email Open Rate', value: '24.6%', sub: 'Average campaign open rate',
+            bar: 25, color: '#39d0c8', iconBg: 'rgba(57,208,200,0.12)',
+            icon: e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#39d0c8', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 20, height: 20 },
+              e('path', { d: 'M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z' }),
+              e('polyline', { points: '22,6 12,13 2,6' })
+            )
+          },
+        ];
+
+        return e('div', { className: 'marketing-grid' },
+          cards.map(function (c) {
+            return e('div', { className: 'marketing-card', key: c.label },
+              e('div', { className: 'marketing-icon', style: { background: c.iconBg } }, c.icon),
+              e('div', { className: 'marketing-info' },
+                e('h4', null, c.label),
+                e('div', { className: 'm-value' }, c.value),
+                e('div', { className: 'm-sub' }, c.sub),
+                e('div', { className: 'marketing-bar-wrap' },
+                  e('div', { className: 'marketing-bar', style: { width: c.bar + '%', background: c.color } })
+                )
+              )
+            );
+          })
+        );
+      }
+
+      function CampaignTable() {
+        var statusCls = { Active: 'active', Completed: 'processing', Paused: 'paused' };
+        var rows = CAMPAIGN_DATA.map(function (c) {
+          var roiColor = c.roi > 100 ? '#22c55e' : c.roi < 100 ? '#f85149' : '#e6edf3';
+          return e('tr', { key: c.campaign },
+            e('td', { style: { fontWeight: 500 } }, c.campaign),
+            e('td', null, '$' + c.spend.toLocaleString()),
+            e('td', { className: 'revenue-cell' }, '$' + c.revenue.toLocaleString()),
+            e('td', { style: { color: roiColor, fontWeight: 600 } }, c.roi + '%'),
+            e('td', null,
+              e('span', { className: 'status-badge ' + statusCls[c.status] },
+                e('span', { className: 'dot' }),
+                c.status
+              )
+            )
+          );
+        });
+        return e('div', { className: 'campaign-card' },
+          e('h3', null, 'Marketing Campaigns'),
+          e('p', { className: 'chart-sub' }, 'Performance across active and completed campaigns'),
+          e('table', null,
+            e('thead', null, e('tr', null,
+              e('th', null, 'Campaign'),
+              e('th', null, 'Spend'),
+              e('th', null, 'Revenue'),
+              e('th', null, 'ROI'),
+              e('th', null, 'Status')
+            )),
+            e('tbody', null, rows)
+          )
+        );
+      }
+
+      function App() {
+        var ref = useState('2025');
+        var period = ref[0];
+        var setPeriod = ref[1];
+
+        var kpiIcon = function (stroke, iconBg) {
+          return e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: stroke, strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 18, height: 18 },
+            e('line', { x1: 12, y1: 1, x2: 12, y2: 23 }),
+            e('path', { d: 'M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6' })
+          );
+        };
+
+        return e('div', { className: 'dashboard' },
+          e('div', { className: 'dash-header' },
+            e('div', null,
+              e('h1', null, 'E-Commerce Dashboard'),
+              e('p', null, 'Sales, Business & Marketing Report — ' + period)
+            ),
+            e('div', { className: 'header-actions' },
+              e('select', {
+                className: 'period-select',
+                value: period,
+                onChange: function (ev) { setPeriod(ev.target.value); }
+              },
+                e('option', { value: '2024' }, '2024'),
+                e('option', { value: '2025' }, '2025')
+              ),
+              e('button', { className: 'refresh-btn' },
+                e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 14, height: 14 },
+                  e('polyline', { points: '23 4 23 10 17 10' }),
+                  e('path', { d: 'M20.49 15a9 9 0 1 1-2.12-9.36L23 10' })
+                ),
+                'Refresh'
+              )
+            )
+          ),
+
+          e('div', { className: 'kpi-grid' },
+            KpiCard({ label: 'Total Revenue', value: '$618.2K', change: 18.4, changeLabel: 'vs last year',
+              iconBg: 'rgba(34,197,94,0.12)',
+              icon: e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#22c55e', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 18, height: 18 },
+                e('line', { x1: 12, y1: 1, x2: 12, y2: 23 }),
+                e('path', { d: 'M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6' })
+              )
+            }),
+            KpiCard({ label: 'Total Orders', value: '6,405', change: 12.7, changeLabel: 'vs last year',
+              iconBg: 'rgba(88,166,255,0.12)',
+              icon: e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#58a6ff', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 18, height: 18 },
+                e('path', { d: 'M6 2L3 6v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V6l-3-4z' }),
+                e('line', { x1: 3, y1: 6, x2: 21, y2: 6 }),
+                e('path', { d: 'M16 10a4 4 0 0 1-8 0' })
+              )
+            }),
+            KpiCard({ label: 'New Customers', value: '4,109', change: 15.3, changeLabel: 'vs last year',
+              iconBg: 'rgba(163,113,247,0.12)',
+              icon: e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#a371f7', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 18, height: 18 },
+                e('path', { d: 'M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2' }),
+                e('circle', { cx: 12, cy: 7, r: 4 })
+              )
+            }),
+            KpiCard({ label: 'Conversion Rate', value: '4.8%', change: -2.1, changeLabel: 'vs last year',
+              iconBg: 'rgba(240,136,62,0.12)',
+              icon: e('svg', { viewBox: '0 0 24 24', fill: 'none', stroke: '#f0883e', strokeWidth: '2', strokeLinecap: 'round', strokeLinejoin: 'round', width: 18, height: 18 },
+                e('polyline', { points: '23 6 13.5 15.5 8.5 10.5 1 18' }),
+                e('polyline', { points: '17 6 23 6 23 12' })
+              )
+            })
+          ),
+
+          e('div', { className: 'charts-row' },
+            RevenueChart(),
+            ChannelChart()
+          ),
+
+          e('div', { className: 'charts-row-2' },
+            OrdersChart(),
+            CategoryChart()
+          ),
+
+          MarketingCards(),
+
+          e('div', { className: 'tables-row' },
+            TopProductsTable(),
+            RecentOrdersTable()
+          ),
+
+          CampaignTable()
+        );
+      }
+
+      var root = ReactDOM.createRoot(document.getElementById('root'));
+      root.render(e(App));
+    })();
+  </script>
+</body>
+</html>
